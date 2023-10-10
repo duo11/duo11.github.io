@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js" ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="imange/png" href="image/logo.">
+        <title>Not Facebook</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+
+            <!-- <*****************Nav Bar************************ -->
+
+        <div class="left-nav" >
+            <div class="item logo"><a href="#" ><img src="image/logo.ico" alt="logo" ></a></div>
+            <div id="searchbar" onclick="show()" tabindex="0" onkeydown="handleKeyPress(event)">
+                <div class="row">
+                    <img src="image/search.png" class="search-icon" alt="searchIcon" >
+                    <p id="searchtext" style="overflow-x: 10px;width: 30vw;">Search </p>
+                </div>    
+            </div>
+            
+        </div>
+        <div id="search-area">
+            <div id="search-header">
+                <button class="item-back" onclick="hide()" tabindex="0"><img src="image/backicon.png" alt="backIcon"></button>
+                <div class="search-box">
+                    <div class="row1">
+                        <img src="image/search.png" class="search-icon" alt="searchIcon">
+                        <input  type="text" id="input-box" placeholder="Search Facebook" >
+                    </div>
+                </div>
+            </div>
+            <div class="result-box">
+                <h1>Gần đây</h1>
+                <ul class="pb">
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div id="main-nav">
+        <div class="main-menu">
+            <div class="icon" tooltip-title="Home page" ><a href="#" id="home-page"><img src="image/main menu/home.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Video"><a href="https://www.facebook.com/watch/?ref=tab"><img src="image/main menu/video.png" alt=" " ></a></div>
+            <div class="icon" tooltip-title="Marketplace"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="image/main menu/marketplace.png"  alt=""></a></div>
+            <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png" alt=""  ></a></div>
+        </div>
+        </div>
+        <div class="right-nav" >
+            <div class="right-icon" tooltip-title="Menu" href="#" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Anouncement" href="#" tabindex="0" ><img src="image/notification.png" alt="" ></div>
+            <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" ><img src="image/avatar1.png" alt="">  </div>
+            
+            
+        </div>
+        <div id="setting-area" >
+            <div id="profile-area">
+                <div class="profile-box">
+                        <img src="image/avatar.png" alt="" >
+                        <p >Your Name</p>
+                </div>
+                <hr>
+                <br/>
+                <a class="p3" href="#">See all profiles</a>
+            </div>
+            <ul class="ul1">
+                <li><img src="image/setting.png" class="si" alt=""><p>Settings & privacy</p></li>
+                <li><img src="image/help.png" class="si" alt=""><p>Help & support</p></li>
+                <li><img src="image/darkmode.png"class="si" alt=""><p>Screen & accessibility</p></li>
+                <li><img src="image/feedback.png"class="si" alt=""><p>Feedback</p></li>
+                <li><img src="image/logout.png"class="si" alt=""><p>Log off</p></li>
+                
+            </ul>
+            <p class="p4">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023</p>
+
+        </div>
+
+
+        </header>
+        <footer>
+            <div id="main-nav-footer">
+                <div class="main-menu">
+                    <div class="icon" tooltip-title="Home page" ><a href="#" id="home-page"><img src="image/main menu/home.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Video"><a href="https://www.facebook.com/watch/?ref=tab"><img src="image/main menu/video.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Marketplace"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="image/main menu/marketplace.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png"  alt="" ></a></div>
+                </div>
+                </div>
+        </footer>
+        <!--*****************Left-Side Bar************************ -->
+
+        
+        <div id="left-side-column" style="overflow-y: auto;height: 100vh;">
+            <ul class="side-bar">
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon1" alt="" ><p >Your Name</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/friend.png" id="side-icon2" alt="" ><p >Friends</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/memory.png" id="side-icon3" alt="" ><p>Celebrate</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/saved.png" id="side-icon4" alt="" ><p>Saved</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/group-color.png" id="side-icon5" alt="" ><p>Group</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/video-color.png" id="side-icon6" alt="" ><p>Video</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/downarrow.png" id="side-icon7" alt="" ><p>See also</p> </a></li>
+                <br/>
+                <hr>
+                <br/>
+                <li class="list" id="title"><p-1>Your Shortcuts</p-1></li>
+
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 1</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 2</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 3</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 4</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 5</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 6</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 7</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 8</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 9</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/downarrow.png" id="side-icon7" alt="" ><p>See also</p> </a></li>
+                <br/>
+                <li id="sidefeet">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023 </li>
+            </ul>
+        </div>  
+
+        <!--*****************Right-Side Bar************************-->
+
+        <div id="right-side-column" style="overflow-y: auto;height: 546px;" >
+            <ul class="side-bar">
+                <li class="list" id="title"><p-1>Sponsored</p-1></li>
+
+                <li class="list" id="sponsor"">
+                    <a href="#" class=""><img src="image/sponsor1.jpg" id="side-icon14" alt="" >
+                        <div>  
+                            <p >[Campus Tour x HUCE x ViewSonic] Tomorrowland</p>
+                            <p id="address">www.viewsonic.com</p> 
+                        </div>
+                    </a>
+                </li>   
+                <li class="list" id="sponsor" >
+                    <a href="#" class=""><img src="image/sponsor2.png" id="side-icon15" alt="" >
+                        <div>    
+                            <p >Duolingo: AI and the Future of Education: ...</p> 
+                            <p id="address">www.duolingo.com</p>
+                        </div>                                
+                    </a>
+                </li>
+                <br/>
+                <hr>
+                <br/>
+
+                <li class="list" id="title"><p-1>Friend requests</p-1></li>
+
+                <li class="list" id="request"">
+                    <img src="image/request1.jpg" alt="" tabindex="0" >
+                    <div href="#" class="area">
+                        <p id="name">Jack - J97</p>
+                        <div class="button" >
+                            <button class="confirm" id="confirm">Confirm</button>
+                            <button class="confirm" id="erase">Erase</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list" id="request"">
+                    <img src="image/request2.jpg" alt="" tabindex="0"  >
+                    <div href="#" class="area">
+                        <p id="name">Võ Văn Thưởng</p>
+                        <div class="button" >
+                            <button class="confirm" id="confirm">Confirm</button>
+                            <button class="confirm" id="erase">Erase</button>
+                        </div>
+                    </div>
+                </li>
+                <br/>
+                <hr>
+                <br/>
+                <li class="list" id="title"><p-1>Contact Person</p-1></li>
+
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 1</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8"  alt=""><p>Person 2</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 3</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 4</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 5</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 6</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 7</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 8</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 9</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 10</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 11</p> </a></li>
+                <br/>
+                <hr>
+                <br/>
+                <li class="list" id="title"><p-1>Group convervations</p-1></li>
+
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 1</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 2</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 3</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 4</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 5</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 6</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 7</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 8</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 9</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 10</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Group 11</p> </a></li>
+                
+            </ul>
+            
+        </div>             
+
+<div id="center-column" >
+        <div class="story-area"  >
+                <li class="story"><a href="#" class="st1"><img src="image/story1.png" alt=""  ><p ></p> </a></li>
+                <li class="story"><a href="#" class=""><img src="image/story2.jpg"  alt="" ><p >Việt nguyễn</p> </a></li>
+                <li class="story"><a href="#" class =""><img src="image/story3.jpg" alt=""  ><p>Kim Dinh</p> </a></li>
+                <li class="story"><a href="#" class=""><img src="image/story4.jpg"  alt="" ><p>Chao</p> </a></li>
+                <li class="story"><a href="#" class=""><img src="image/story5.webp" alt=""  ><p>Friend 4</p> </a></li>
+                <li class="story"><a href="#" class=""><img src="image/story6.jpg"  alt="" ><p>Friend 5</p> </a></li>
+                <li class="story"><a href="#" class=""><img src="image/story7.jpg"  alt="" ><p>Friend 6</p> </a></li>
+        </div>
+        <br/>
+        <div class="write-post-area">
+            <div class="wa" >
+                <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                <input type="text" id="tk" placeholder="What are you thinking?"onclick="show3()"  >
+            </div>
+            <br/>
+            <hr>
+        
+            <div class="wa">
+                <div class="block" ><img src="image/stream.png" alt=""  ><p class="waText" >Live 
+                    video</p></div>
+                <div class="block" ><img src="image/picture.png" alt=""  ><p class="waText" >Photo/
+                    Video</p></div>
+                <div class="block" ><img src="image/icon.png" alt=""  ><p class="waText" >Feeling/
+                    activities</p></div>
+            
+            </div>
+        </div>
+        <br/>
+<div class="main-content" >
+
+            
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="left-post-header">
+                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="info">
+                            <a class="name" href="#" >Your Name</a>
+                            <p class="date">March 9,1999 at 23:59</p>
+                        </div>
+                </div>
+                <div class="option" >
+                    <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                    <div class="moreoption"><img src="image/x.png" alt=""></div>
+                    
+                </div>
+            </div>
+                
+
+                <div class="post-content">
+                    <div class="ct">
+                        <div>
+                            
+                            <p class="caption" id="caption1" >
+                                [Campus Tour x HUCE x ViewSonic] 
+                            Tomorrowland
+                            Campus Tour là chuỗi sự kiện được tổ chức bởi Intel Việt Nam dành riêng cho các bạn sinh viên đam mê công nghệ tại Hà Nội. Cho tới nay, Campus Tour đã trải qua 4 mùa với hàng loạt thành tích nổi bật như: 07 trường Đại học tại Hà Nội, 20.000+ sinh viên tham dự offline, 1.000.000+ lượt tiếp cận trên các kênh truyền thông, 15+ đối tác là các hãng công nghệ nổi tiếng…
+                            Tháng 9 này, Campus Tour sẽ kết hợp cùng ViewSonic để trở lại với một hình ảnh và format hoàn toàn mới lạ, năng động hơn, trẻ trung hơn và sẽ có màn tái ngộ với Trường Đại học Xây dựng Hà Nội - là nơi đã diễn ra mùa đầu tiên. Trở lại với HUCE lần này, Intel cùng ViewSonic hứa hẹn sẽ mang đến cho các bạn sinh viên một sân chơi độc đáo, cuốn hút với các hoạt động xuyên suốt như: Khu vực trải nghiệm đa chủ đề; Khu vực trưng bày PC EXPO, Watch Party TFT, Workshop giao lưu với KOL nổi tiếng Tân Một Cú và cơ hội được tham gia Gameshow tương tác trực tiếp cùng hàng ngàn phần quà hấp dẫn đang chờ các bạn!
+                            Các bạn sinh viên Trường Đại học Xây dựng ơi! Các bạn đã sẵn sàng chưa? Hẹn gặp các bạn vào Thứ 4 Ngày 20/9 này nhé!!!
+                            -------------------------------
+                            Campus Tour Season 5 - Tomorrowland
+                            Chuỗi sự kiện về công nghệ dành riêng cho sinh viên các trường Đại học tại Hà Nội.
+                            👉🏻Fanpage chính thức của chương trình: https://www.facebook.com/vietnamcampustour
+                            #CampusTour2023 #CampusTour #Intel #VietnamCampusTour #Tomorrowland #ViewSonic
+                            </p>
+                                <p class="dot" id="dot1">...</p>
+                            <button class="toggleButton" href="caption1" id="1">See also</button>
+                        </div>
+                    </div>
+                    <img src="image/sponsor1.jpg" alt="" >
+                </div>
+                <div class="post-footer">
+                    <div class="interacts">
+                        <div class="left-interacts">
+                            <img src="image/like.png" alt="" >
+                            <p>999+</p>
+                        </div>
+                        <div class="right-interacts">
+                            <p>999+</p>
+                            <img src="image/comment.png"  alt="">
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="interact-button">
+                        
+                            <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                            <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                            <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="left-post-header">
+                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="info">
+                            <a class="name" href="#" >Your Name</a>
+                            <p class="date">March 9,1999 at 23:59</p>
+                        </div>
+                </div>
+                <div class="option" >
+                    <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                    <div class="moreoption"><img src="image/x.png" alt=""></div>
+                    
+                </div>
+            </div>
+                
+
+                <div class="post-content">
+                    <div class="ct">
+                        <p class="caption" id="caption2" >
+                            [Campus Tour x HUCE x ViewSonic] 
+                            Tomorrowland
+                            Campus Tour là chuỗi sự kiện được tổ chức bởi Intel Việt Nam dành riêng cho các bạn sinh viên đam mê công nghệ tại Hà Nội. Cho tới nay, Campus Tour đã trải qua 4 mùa với hàng loạt thành tích nổi bật như: 07 trường Đại học tại Hà Nội, 20.000+ sinh viên tham dự offline, 1.000.000+ lượt tiếp cận trên các kênh truyền thông, 15+ đối tác là các hãng công nghệ nổi tiếng…
+                            Tháng 9 này, Campus Tour sẽ kết hợp cùng ViewSonic để trở lại với một hình ảnh và format hoàn toàn mới lạ, năng động hơn, trẻ trung hơn và sẽ có màn tái ngộ với Trường Đại học Xây dựng Hà Nội - là nơi đã diễn ra mùa đầu tiên. Trở lại với HUCE lần này, Intel cùng ViewSonic hứa hẹn sẽ mang đến cho các bạn sinh viên một sân chơi độc đáo, cuốn hút với các hoạt động xuyên suốt như: Khu vực trải nghiệm đa chủ đề; Khu vực trưng bày PC EXPO, Watch Party TFT, Workshop giao lưu với KOL nổi tiếng Tân Một Cú và cơ hội được tham gia Gameshow tương tác trực tiếp cùng hàng ngàn phần quà hấp dẫn đang chờ các bạn!
+                            Các bạn sinh viên Trường Đại học Xây dựng ơi! Các bạn đã sẵn sàng chưa? Hẹn gặp các bạn vào Thứ 4 Ngày 20/9 này nhé!!!
+                            -------------------------------
+                            Campus Tour Season 5 - Tomorrowland
+                            Chuỗi sự kiện về công nghệ dành riêng cho sinh viên các trường Đại học tại Hà Nội.
+                            👉🏻Fanpage chính thức của chương trình: https://www.facebook.com/vietnamcampustour
+                            #CampusTour2023 #CampusTour #Intel #VietnamCampusTour #Tomorrowland #ViewSonic</p>
+                            <p class="dot" id="dot2">...</p>
+                        <button class="toggleButton" id="2">See also</button>
+                    </div>
+                    <img src="image/sponsor1.jpg" alt="" >
+                </div>
+                <div class="post-footer">
+                    <div class="interacts">
+                        <div class="left-interacts">
+                            <img src="image/like.png" alt="" >
+                            <p>999+</p>
+                        </div>
+                        <div class="right-interacts">
+                            <p>999+</p>
+                            <img src="image/comment.png"  alt="">
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="interact-button">
+                        
+                            <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                            <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                            <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="left-post-header">
+                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="info">
+                            <a class="name" href="#" >Your Name</a>
+                            <p class="date">March 9,1999 at 23:59</p>
+                        </div>
+                </div>
+                <div class="option" >
+                    <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                    <div class="moreoption"><img src="image/x.png" alt=""></div>
+                    
+                </div>
+            </div>
+                
+
+                <div class="post-content">
+                    <div class="ct">
+                        <p class="caption" id="caption3">
+                            [Campus Tour x HUCE x ViewSonic] 
+                            Tomorrowland
+                            Campus Tour là chuỗi sự kiện được tổ chức bởi Intel Việt Nam dành riêng cho các bạn sinh viên đam mê công nghệ tại Hà Nội. Cho tới nay, Campus Tour đã trải qua 4 mùa với hàng loạt thành tích nổi bật như: 07 trường Đại học tại Hà Nội, 20.000+ sinh viên tham dự offline, 1.000.000+ lượt tiếp cận trên các kênh truyền thông, 15+ đối tác là các hãng công nghệ nổi tiếng…
+                            Tháng 9 này, Campus Tour sẽ kết hợp cùng ViewSonic để trở lại với một hình ảnh và format hoàn toàn mới lạ, năng động hơn, trẻ trung hơn và sẽ có màn tái ngộ với Trường Đại học Xây dựng Hà Nội - là nơi đã diễn ra mùa đầu tiên. Trở lại với HUCE lần này, Intel cùng ViewSonic hứa hẹn sẽ mang đến cho các bạn sinh viên một sân chơi độc đáo, cuốn hút với các hoạt động xuyên suốt như: Khu vực trải nghiệm đa chủ đề; Khu vực trưng bày PC EXPO, Watch Party TFT, Workshop giao lưu với KOL nổi tiếng Tân Một Cú và cơ hội được tham gia Gameshow tương tác trực tiếp cùng hàng ngàn phần quà hấp dẫn đang chờ các bạn!
+                            Các bạn sinh viên Trường Đại học Xây dựng ơi! Các bạn đã sẵn sàng chưa? Hẹn gặp các bạn vào Thứ 4 Ngày 20/9 này nhé!!!
+                            -------------------------------
+                            Campus Tour Season 5 - Tomorrowland
+                            Chuỗi sự kiện về công nghệ dành riêng cho sinh viên các trường Đại học tại Hà Nội.
+                            👉🏻Fanpage chính thức của chương trình: https://www.facebook.com/vietnamcampustour
+                            #CampusTour2023 #CampusTour #Intel #VietnamCampusTour #Tomorrowland #ViewSonic</p>
+                            <p class="dot" id="dot3">...</p>
+                        <button class="toggleButton" id="3">See also</button>
+                    </div>
+                    <img src="image/sponsor1.jpg" alt="" >
+                </div>
+                <div class="post-footer">
+                    <div class="interacts">
+                        <div class="left-interacts">
+                            <img src="image/like.png" alt="" >
+                            <p>999+</p>
+                        </div>
+                        <div class="right-interacts">
+                            <p>999+</p>
+                            <img src="image/comment.png"  alt="">
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="interact-button">
+                        
+                            <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                            <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                            <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="left-post-header">
+                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png" alt=""  ></a></div>
+                        <div class="info">
+                            <a class="name" href="#" >Your Name</a>
+                            <p class="date">March 9,1999 at 23:59</p>
+                        </div>
+                </div>
+                <div class="option" >
+                    <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                    <div class="moreoption"><img src="image/x.png" alt=""></div>
+                    
+                </div>
+            </div>
+                
+
+                <div class="post-content">
+                    <div class="ct">
+                        <p class="caption" id="caption4">
+                            [Campus Tour x HUCE x ViewSonic] 
+                            Tomorrowland
+                            Campus Tour là chuỗi sự kiện được tổ chức bởi Intel Việt Nam dành riêng cho các bạn sinh viên đam mê công nghệ tại Hà Nội. Cho tới nay, Campus Tour đã trải qua 4 mùa với hàng loạt thành tích nổi bật như: 07 trường Đại học tại Hà Nội, 20.000+ sinh viên tham dự offline, 1.000.000+ lượt tiếp cận trên các kênh truyền thông, 15+ đối tác là các hãng công nghệ nổi tiếng…
+                            Tháng 9 này, Campus Tour sẽ kết hợp cùng ViewSonic để trở lại với một hình ảnh và format hoàn toàn mới lạ, năng động hơn, trẻ trung hơn và sẽ có màn tái ngộ với Trường Đại học Xây dựng Hà Nội - là nơi đã diễn ra mùa đầu tiên. Trở lại với HUCE lần này, Intel cùng ViewSonic hứa hẹn sẽ mang đến cho các bạn sinh viên một sân chơi độc đáo, cuốn hút với các hoạt động xuyên suốt như: Khu vực trải nghiệm đa chủ đề; Khu vực trưng bày PC EXPO, Watch Party TFT, Workshop giao lưu với KOL nổi tiếng Tân Một Cú và cơ hội được tham gia Gameshow tương tác trực tiếp cùng hàng ngàn phần quà hấp dẫn đang chờ các bạn!
+                            Các bạn sinh viên Trường Đại học Xây dựng ơi! Các bạn đã sẵn sàng chưa? Hẹn gặp các bạn vào Thứ 4 Ngày 20/9 này nhé!!!
+                            -------------------------------
+                            Campus Tour Season 5 - Tomorrowland
+                            Chuỗi sự kiện về công nghệ dành riêng cho sinh viên các trường Đại học tại Hà Nội.
+                            👉🏻Fanpage chính thức của chương trình: https://www.facebook.com/vietnamcampustour
+                            #CampusTour2023 #CampusTour #Intel #VietnamCampusTour #Tomorrowland #ViewSonic</p>
+                            <p class="dot" id="dot4">...</p>
+                        <button class="toggleButton" id="4">See also</button>
+                    </div>
+                    <img src="image/sponsor1.jpg" alt="" >
+                </div>
+                <div class="post-footer">
+                    <div class="interacts">
+                        <div class="left-interacts">
+                            <img src="image/like.png"  alt="">
+                            <p>999+</p>
+                        </div>
+                        <div class="right-interacts">
+                            <p>999+</p>
+                            <img src="image/comment.png"  alt="">
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="interact-button">
+                        
+                            <div class="block block-1" ><img src="image/likewhite.png" alt=""  ><p>Like</p></div>
+                            <div class="block block-1" ><img src="image/comment.png" alt=""  ><p>Comment</p></div>
+                            <div class="block block-1" ><img src="image/share.png" alt=""  ><p>Share</p></div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+
+
+    <div id="writeArea">
+        <div id="main-area">
+           <div id="area-head">
+                <p>Create a post</p>
+                <div id="x-button" onmousedown="show3()"><img src="image/x.png"></div>
+                
+            </div>
+            <hr>
+           <div id="pa">
+                <a><img src="image/avatar.png"></a>
+                <div id="pa1">
+                    <p>Your Name</p>
+                    <button><img src="image/friendBlack.png" alt="">
+                        Friend
+                        <img src="image/downarrow1.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div id="ma">
+                <textarea id="textarea" placeholder="What are you thinking?" ></textarea>
+                <div id="ma1">
+                    <img src="image/choosecolor.png" alt="">
+                    <img src="image/emoji.png" alt="">
+                </div>
+            </div>
+            <div id="fa">
+                <div id="fa1">
+                    <p>Add to your article</p>
+                    <div id="fa2">
+                        <img src="image/picture.png">
+                        <img src="image/tag.png">
+                        <img src="image/icon.png">
+                        <img src="image/gps.png">
+                        <img src="image/gif.png">
+                        <img src="image/3dots.png">
+
+                    </div>
+                </div>
+                <button type="submit" id="fa3">Post</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="scrypt.js"></script>
+        
+    </body>
+</html>
