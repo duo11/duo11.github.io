@@ -297,9 +297,8 @@ button {
     opacity: 1;
     transition-delay:300ms;
 }
-#home-page{
+#currentPage{
     border-bottom:#9400FF 3px solid;
-    
 }
 .right-nav{
     display: flex;
@@ -341,7 +340,7 @@ button {
 
 }
 
-.account img{
+#accountImg{
     padding-top: 8px;
     padding-left:5.5px ;
     padding-right: 6px;

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js" ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="imange/png" href="image/logo.">
+        <link rel="icon" type="imange/x-icon" href="image/logo.ico">
         <title>Not Facebook</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         
@@ -151,7 +150,7 @@
         </div>
         <div id="main-nav">
         <div class="main-menu">
-            <div class="icon" tooltip-title="Home page" ><a href="#" id="home-page"><img src="image/main menu/home.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Home page" ><a href="#" id="currentPage"><img src="image/main menu/home.png" alt="" ></a></div>
             <div class="icon" tooltip-title="Video"><a href="https://www.facebook.com/watch/?ref=tab"><img src="image/main menu/video.png" alt=" " ></a></div>
             <div class="icon" tooltip-title="Marketplace"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="image/main menu/marketplace.png"  alt=""></a></div>
             <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
@@ -162,7 +161,7 @@
             <div class="right-icon" tooltip-title="Menu" href="#" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
             <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
             <div class="right-icon" tooltip-title="Anouncement" href="#" tabindex="0" ><img src="image/notification.png" alt="" ></div>
-            <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" ><img src="image/avatar1.png" alt="">  </div>
+            <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="image/avatar1.png" alt="" id="accountImg" > </div>
             
             
         </div>
@@ -206,7 +205,7 @@
         
         <div id="left-side-column" style="overflow-y: auto;height: 100vh;">
             <ul class="side-bar">
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon1" alt="" ><p >Your Name</p> </a></li>
+                <li class="list"><a href="profile.html" class=""><img src="image/avatar.png" id="side-icon1" alt="" ><p >Your Name</p> </a></li>
                 <li class="list"><a href="#" class=""><img src="image/friend.png" id="side-icon2" alt="" ><p >Friends</p> </a></li>
                 <li class="list"><a href="#" class=""><img src="image/memory.png" id="side-icon3" alt="" ><p>Celebrate</p> </a></li>
                 <li class="list"><a href="#" class=""><img src="image/saved.png" id="side-icon4" alt="" ><p>Saved</p> </a></li>
@@ -331,7 +330,7 @@
         <br/>
         <div class="write-post-area">
             <div class="wa" >
-                <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" id="accountImg"></a></div>
                 <input type="text" id="tk" placeholder="What are you thinking?"onclick="show3()"  >
             </div>
             <br/>
@@ -355,7 +354,7 @@
             <div class="post">
                 <div class="post-header">
                     <div class="left-post-header">
-                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatar1.png"  alt="" id="accountImg"></a></div>
                         <div class="info">
                             <a class="name" href="#" >Your Name</a>
                             <p class="date">March 9,1999 at 23:59</p>
@@ -417,7 +416,7 @@
             <div class="post">
                 <div class="post-header">
                     <div class="left-post-header">
-                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatar1.png"  alt="" id="accountImg" ></a></div>
                         <div class="info">
                             <a class="name" href="#" >Your Name</a>
                             <p class="date">March 9,1999 at 23:59</p>
@@ -475,7 +474,7 @@
             <div class="post">
                 <div class="post-header">
                     <div class="left-post-header">
-                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png"  alt="" ></a></div>
+                        <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatar1.png"  alt="" id="accountImg"></a></div>
                         <div class="info">
                             <a class="name" href="#" >Your Name</a>
                             <p class="date">March 9,1999 at 23:59</p>
@@ -534,7 +533,7 @@
             <div class="post">
                 <div class="post-header">
                     <div class="left-post-header">
-                        <div class="account" tooltip-title="Account"><a href="#" ><img src="image/avatar1.png" alt=""  ></a></div>
+                        <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatar1.png" alt="" id="accountImg" ></a></div>
                         <div class="info">
                             <a class="name" href="#" >Your Name</a>
                             <p class="date">March 9,1999 at 23:59</p>
@@ -638,7 +637,7 @@
     </div>
 
 
-    <script type="text/javascript" src="scrypt.js"></script>
+    <script type="text/javascript" src="script.js"></script>
         
     </body>
 </html>
