@@ -666,10 +666,6 @@ ul li:hover {
 }
 
 
-#center-column{
-    /* background-color: #1770E6; */
-}
-
 .story-area{
     display: flex;
     justify-content: flex-start;
