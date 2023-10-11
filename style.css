@@ -389,6 +389,9 @@ button {
     margin:5px;
     border-radius: 5px;
     align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .profile-box:hover{
@@ -1373,7 +1376,7 @@ button.toggleButton:hover{
 .largeicon{
     height: 150px;
     width: 150px;
-    border: 5px solid #F0F2F5;
+    border: 5px solid white;
     border-radius: 100%;
     position: relative;
     z-index: 1;
