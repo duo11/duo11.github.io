@@ -150,7 +150,7 @@ const caption = document.querySelectorAll('.caption');
                     }
                     else{
                         document.getElementById(captionId).style.maxHeight = "3em";
-                        document.getElementById(toggleId).innerText = "See also"
+                        document.getElementById(toggleId).innerText = "See more"
                         document.getElementById(dotId).style.display ="block";
 
                     }

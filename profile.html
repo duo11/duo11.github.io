@@ -16,9 +16,9 @@
                 <div class="item logo"><a href="#" ><img src="image/logo.ico" alt="logo" ></a></div>
                 <div id="searchbar" onclick="show()" tabindex="0" onkeydown="handleKeyPress(event)">
                     <div class="row">
-                        <img src="image/search.png" class="search-icon" alt="searchIcon" >
+                        <img src="image/search.png" class="search-icon" alt="searchIcon">
                         <p id="searchtext" style="overflow-x: 10px;width: 30vw;">Search </p>
-                    </div>    
+                    </div>
                 </div>
                 
             </div>
@@ -185,10 +185,41 @@
         </header>
         <div id="head-profile-page">
             <div id="background-photo">
-                <img src="image/" alt="">
+                <div id="background"></div>
+                <div id="background-fade-menu">
+                    <div id="background-fade"></div>
+                    <div id="background-menu">
+                        <div id="background-menu-item">
+                            <img src="image/changeavataricon.png" alt="" class="backroung-menu-item-icon">
+                            <p>Create with avatar</p>
+                        </div>
+                        <div id="background-menu-item">
+                            <img src="image/camera.png" alt="" class="backroung-menu-item-icon">
+                            <p>Add a cover photo</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="avatar-area"></div>
-            <div id="nevigateBar-profile-page"></div>
+        <div id="avatar-area">
+                <div id="left-avatar-area" >
+                    <img src="image/avatar.png" alt="" class="largeicon">
+                    <div id="text-left-avatar-area">
+                        <p id="name-text-left-avatar-area"><b>Nguyen Tuan Duong</b></p>
+                        <p id="friend-text">145 friends</p>
+                    </div>
+                </div>
+                <div id="right-avatar-area">
+                    <div id="right-avatar-area-item-1">
+                        <img src="image/plusbutton.png" alt="" class="smallicon">
+                        <p id="white-text">Add to story</p>
+                    </div>
+                    <div  id="right-avatar-area-item-2">
+                        <img src="image/pen.png" alt="" class="smallicon">
+                        <p>Edit your profile</p>
+                    </div>
+                </div>
+        </div>
+        <div id="nevigateBar-profile-page"></div>
         </div>
 
 
