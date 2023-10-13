@@ -90,13 +90,13 @@ window.addEventListener('scroll', () => {
     if(scroll > lastScroll){
         const currentMarginBottom = parseInt(footer.style.marginBottom || 0,0);
         if(currentMarginBottom > -50){
-            footer.style.marginBottom = `${currentMarginBottom - 2}px`;
+            footer.style.marginBottom = `${currentMarginBottom - 3}px`;
             
         }
     }
-    else if(scroll < lastScroll -10){ 
+    else if(scroll < lastScroll -8){ 
         const currentMarginBottom = parseInt(footer.style.marginBottom || 0,0);
-        footer.style.marginBottom = `${currentMarginBottom + 2}px`;
+        footer.style.marginBottom = `${currentMarginBottom + 3}px`;
         if(currentMarginBottom == 0){
             footer.style.marginBottom = 0;
         }
@@ -170,5 +170,6 @@ textarea.addEventListener("input",function(){
 function handleKeyPress(event) {
     if (event.key === "Enter") {
         show();
+        show2();
     }
 }

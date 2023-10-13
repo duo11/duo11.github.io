@@ -67,13 +67,13 @@ window.addEventListener('scroll', () => {
     if(scroll > lastScroll){
         const currentMarginBottom = parseInt(footer.style.marginBottom || 0,0);
         if(currentMarginBottom > -50){
-            footer.style.marginBottom = `${currentMarginBottom - 2}px`;
+            footer.style.marginBottom = `${currentMarginBottom - 3}px`;
             
         }
     }
-    else if(scroll < lastScroll -10){ 
+    else if(scroll < lastScroll -8){ 
         const currentMarginBottom = parseInt(footer.style.marginBottom || 0,0);
-        footer.style.marginBottom = `${currentMarginBottom + 2}px`;
+        footer.style.marginBottom = `${currentMarginBottom + 3}px`;
         if(currentMarginBottom == 0){
             footer.style.marginBottom = 0;
         }
@@ -94,16 +94,16 @@ const caption = document.querySelectorAll('.caption');
                 const dotId = "dot" + toggleId;
                 let maxheight = document.getElementById(captionId).style.maxHeight;
                 caption.forEach(p => {
-                    if(maxheight == "3em"){
-                        document.getElementById(captionId).style.maxHeight = "none";
-                        document.getElementById(toggleId).innerText = "Collapse"
-                        document.getElementById(dotId).style.display ="none";
-
-                    }
-                    else{
+                    if(maxheight == "none"){
                         document.getElementById(captionId).style.maxHeight = "3em";
                         document.getElementById(toggleId).innerText = "See more"
                         document.getElementById(dotId).style.display ="block";
+
+                    }
+                    else{
+                        document.getElementById(captionId).style.maxHeight = "none";
+                        document.getElementById(toggleId).innerText = "Collapse"
+                        document.getElementById(dotId).style.display ="none";
 
                     }
                 });
