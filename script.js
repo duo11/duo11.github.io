@@ -7,11 +7,11 @@ function hide(){
 }
 //*****************   Make setting window appear/disappear ************************
 function show2(){
-    if(document.getElementById('setting-area').style.display == "none"){
-    document.getElementById('setting-area').style.display = "flex";
+    if(document.getElementById('setting-area').style.display == "flex"){
+    document.getElementById('setting-area').style.display = "none";
 }
     else{
-        document.getElementById('setting-area').style.display = "none";
+        document.getElementById('setting-area').style.display = "flex";
     }
 }
 
@@ -30,17 +30,6 @@ function show3(){
     }
 }
 
-function adjustSideBarsDisplay(){
-    if(window.innerWidth < 1180 ) {
-        document.getElementById('right-side-column').style.display = "none";
-        document.getElementById('left-side-column').style.display = "none";
-    }
-    else{
-        document.getElementById('right-side-column').style.display = "flex";
-        document.getElementById('left-side-column').style.display = "flex";
-    }
-    
-}
 function adjustMainNavDisplay(){
     if(window.innerWidth < 800 ) {
         document.getElementById('main-nav-footer').style.display = "flex";
@@ -83,9 +72,9 @@ function adjustWaText(){
 }
 adjustWaText();
 adjustMainNavDisplay();
-adjustSideBarsDisplay();
+
 adjustSearchBar();
-window.addEventListener('resize', adjustSideBarsDisplay);
+
 window.addEventListener('resize', adjustMainNavDisplay);
 window.addEventListener('resize', adjustSearchBar);
 window.addEventListener('resize', adjustWaText);
@@ -143,16 +132,16 @@ const caption = document.querySelectorAll('.caption');
                 const dotId = "dot" + toggleId;
                 let maxheight = document.getElementById(captionId).style.maxHeight;
                 caption.forEach(p => {
-                    if(maxheight == "3em"){
-                        document.getElementById(captionId).style.maxHeight = "none";
-                        document.getElementById(toggleId).innerText = "Collapse"
-                        document.getElementById(dotId).style.display ="none";
-
-                    }
-                    else{
+                    if(maxheight == "none"){
                         document.getElementById(captionId).style.maxHeight = "3em";
                         document.getElementById(toggleId).innerText = "See more"
                         document.getElementById(dotId).style.display ="block";
+
+                    }
+                    else{
+                        document.getElementById(captionId).style.maxHeight = "none";
+                        document.getElementById(toggleId).innerText = "Collapse"
+                        document.getElementById(dotId).style.display ="none";
 
                     }
                 });

@@ -11,7 +11,8 @@
 }
 
 .left-nav:hover::-webkit-scrollbar,
-#mainbody-profile-page::-webkit-scrollbar{
+#mainbody-profile-page::-webkit-scrollbar,
+#list-lcvp::-webkit-scrollbar{
     display:none;
 }
 *:hover::-webkit-scrollbar{
@@ -40,6 +41,8 @@ body,header,footer{
 }
 body {
     background-color: #F0F2F5;
+    display: flex;
+    /* justify-content: center; */
 }
 header{
     margin-top: -1px;
@@ -249,15 +252,16 @@ button {
     justify-content: center;
     margin-top:5px;
     flex-wrap: nowrap;
-    height:46px;
-    width:15% ;
+    height:48px;
+    width:20%;
+    max-width: 100px;
     border-radius: 5px;
     min-width: 46px;
     z-index: 4;
 }    
 .icon a{
     width: 100%;
-    height: 33px;
+    height: 37px;
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -271,20 +275,7 @@ button {
     cursor: pointer !important;
     background-color: #F2F2F2;
 }
-.icon::after,
-.right-icon::after{
-    content: attr(tooltip-title); /* Display the content of the title attribute */
-    background-color: #403f3f; /* Background color of the tooltip */
-    color: #fff; /* Text color of the tooltip */
-    padding: 4px 8px; /* Padding around the tooltip text */
-    border-radius: 4px; /* Rounded corners */
-    position: absolute; /* Position*/ 
-    bottom: -50%;
-    font-size: 14px;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+
 .icon:hover::after,
 .right-icon:hover::after{
     content: attr(tooltip-title); /* Display the content of the title attribute */
@@ -296,8 +287,7 @@ button {
     bottom: -50%;
     font-size: 14px;
     z-index: 2;
-    opacity: 1;
-    transition-delay:300ms;
+
 }
 #currentPage{
     border-bottom:#9400FF 3px solid;
@@ -337,6 +327,7 @@ button {
     width: 40px;
     height:40px;
     min-width: 40px;
+    overflow: hidden;
 
 }
 
@@ -348,7 +339,10 @@ button {
     width: 29px;
             
 }
+#avatarImg{
+    width: 40px;
 
+}
 
 .account:hover{
     background-color: #BFC2C6;
@@ -668,7 +662,14 @@ ul li:hover {
 #seperate_bar:hover{
     cursor: default;
 }
-
+#center-column{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 80px auto;
+    
+    
+}
 
 .story-area{
     display: flex;
@@ -676,7 +677,6 @@ ul li:hover {
     height: 270px;
     width: 96vw;
     margin: auto ;
-    padding-top: 74px;
     overflow-x: scroll;
     max-width: 580px;
     position: relative;
@@ -971,12 +971,12 @@ button.toggleButton:hover{
     width: 100%;
 }
 @media only screen and (min-width: 500px) {
-    #main-area{
+    #main-writeArea{
         background-color: white;
         width: 500px;
         height: 400px;
         border-radius:10px;
-        box-shadow: 0px 0px 500px 350px #e1e1e1af ;
+        box-shadow: 0px 0px 1000px 1350px #e1e1e1af ;
     }
     #area-head{
         display:flex;
@@ -1069,7 +1069,7 @@ button.toggleButton:hover{
     #ma1 img:hover{
         cursor: pointer;
     }
-    #fa{
+    #foot-writeArea{
         width: 100%;
         height: 100px;
         padding: 15px 0;
@@ -1078,17 +1078,17 @@ button.toggleButton:hover{
         align-items: center;
         gap: 15px;
     }
-    #fa button{
+    #foot-writeArea button{
         width: 94%;
         height: 40px;
         border-radius: 10px;
         font-size: large;
         background-color: #E4E6E9;
     }
-    #fa button:hover{
+    #foot-writeArea button:hover{
         cursor:not-allowed;
     }
-    #fa1{
+    #fa1-writeArea{
         /* background-color: #1770E6; */
         display: flex;
         justify-content: space-between;
@@ -1101,24 +1101,24 @@ button.toggleButton:hover{
         
 
     }
-    #fa1 p:hover{
+    #fa1-writeArea p:hover{
         cursor: pointer;
     }
-    #fa2{
+    #fa2-writeArea{
         display: flex;
         gap: 10px;
     }
-    #fa2 img{
+    #fa2-writeArea img{
         height: 25px;
         width: 25px;
     }
-    #fa2 img:hover{
+    #fa2-writeArea img:hover{
         cursor: pointer;
     }
     
 }
 @media only screen and (max-width: 500px) {
-    #main-area{
+    #main-writeArea{
         background-color: white;
         width: 100vw;
         height: 400px;
@@ -1214,7 +1214,7 @@ button.toggleButton:hover{
     #ma1 img:hover{
         cursor: pointer;
     }
-    #fa{
+    #foot-writeArea{
         width: 100%;
         height: 100px;
         padding: 15px 0;
@@ -1223,17 +1223,17 @@ button.toggleButton:hover{
         align-items: center;
         gap: 15px;
     }
-    #fa button{
+    #foot-writeArea button{
         width: 94%;
         height: 40px;
         border-radius: 10px;
         font-size: large;
         background-color: #E4E6E9;
     }
-    #fa button:hover{
+    #foot-writeArea button:hover{
         cursor:not-allowed;
     }
-    #fa1{
+    #fa1-writeArea{
         /* background-color: #1770E6; */
         display: flex;
         justify-content: space-between;
@@ -1246,22 +1246,43 @@ button.toggleButton:hover{
         
 
     }
-    #fa1 p:hover{
+    #fa1-writeArea p:hover{
         cursor: pointer;
     }
-    #fa2{
+    #fa2-writeArea{
         display: flex;
         gap: 10px;
     }
-    #fa2 img{
+    #fa2-writeArea img{
         height: 25px;
         width: 25px;
     }
-    #fa2 img:hover{
+    #fa2-writeArea img:hover{
         cursor: pointer;
     }
     
 }
+
+@media only screen and (max-width: 1200px){
+    #left-side-column{
+        display: none;
+    }
+    #center-column{
+        margin-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    #center-column{
+        margin:0 auto;
+    }
+    #right-side-column{
+        display: none;
+    }
+}
+
+
 #head-profile-page{
     width: 100%;
     background-color: white;
@@ -1781,3 +1802,162 @@ button.toggleButton:hover{
         
     }
 }
+
+#left-column-video-page{
+    background-color: white;
+    width: 360px;
+    padding-top: 56px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 5px 5px 5px #e1e1e1af ;
+    z-index: 1;
+
+    
+}
+#head-lcvp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 10px 5px  10px;
+
+}
+.mediumIcon{
+    width: 20px;
+    height: 20px;
+}
+
+#search-lcvp{
+    display: flex;
+    align-items: center;
+    padding:5px 10px;
+}
+#search-lcvp img{
+    position: relative;
+    right: -4%;
+    z-index: 1;
+}
+#search-lcvp input{
+    background-color: #F0F2F5;
+    width: 96%;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    margin-left: -15px;
+    padding: 0 30px;
+    position: relative;
+    font-size: 15px;
+}
+
+#list-lcvp{
+
+    padding:5px 10px;
+    overflow-x: auto;
+}
+.item-list-lcvp{
+    width: 98%;
+    height: 50px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+#currentItem{
+
+    background-color: #F0F2F5;
+}
+
+.imgBorder-item-list-lcvp{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #E4E6E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgBorder-item-list-lcvp img{
+    width: 20px;
+    height: 20px;
+}
+#currentIcon{
+    background-color:#9400FF ;
+}
+
+#mainBody-video-page{
+    width: 50vw;
+    height: fit-content;
+    padding-top: 65px;
+    margin-left: 400px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.video-post{
+    width: 100%;
+    height: 400px;
+    background-color: #050505;
+}
+
+@media only screen and (max-width: 800px){
+    #left-column-video-page{
+        display: flex;
+        width: 100%;
+        height: 50px;
+    }
+    #head-lcvp{
+        padding:5px
+    }
+    #head-lcvp div{
+        display: none;
+    }
+    #search-lcvp img{
+        margin-right: -10px;
+    }
+    #search-lcvp input{
+        width: 35px;
+        padding: 0;
+        font-size: 0;
+    }
+    #list-lcvp{
+        display: flex;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    .item-list-lcvp{
+        margin: auto 0;
+        padding: 0 10px;
+        height: 30px;
+        width: fit-content;
+        border-radius: 50px;
+        background-color: #E4E6E9;
+        font-size: 13px;
+        text-wrap: nowrap;
+
+    }
+    .item-list-lcvp div{
+        display: none;
+    }
+    #mainBody-video-page{
+        padding-top: 120px;
+        margin:0 auto ;
+        width: 98%;
+    }
+    #currentItem{
+        color: #9400FF;
+        background-color: #eed8fe;
+    }
+    
+}
+/* @media only screen and (max-width: 560px){
+    #item-6{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 450px){
+    #item-5{
+        display: none;
+    }
+
+} */

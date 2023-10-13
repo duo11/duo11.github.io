@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="imange/x-icon" href="image/logo.ico">
+        <title>Not Facebook</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+
+            <!-- <*****************Nav Bar************************ -->
+
+        <div class="left-nav" >
+            <div class="item logo"><a href="#" ><img src="image/logo.ico" alt="logo" ></a></div>
+            <div id="searchbar" onclick="show()" tabindex="0" onkeydown="handleKeyPress(event)">
+                <div class="row">
+                    <img src="image/search.png" class="search-icon" alt="searchIcon" >
+                    <p id="searchtext" style="overflow-x: 10px;width: 30vw;">Search </p>
+                </div>    
+            </div>
+            
+        </div>
+        <div id="search-area">
+            <div id="search-header">
+                <button class="item-back" onclick="hide()" tabindex="0"><img src="image/backicon.png" alt="backIcon"></button>
+                <div class="search-box">
+                    <div class="row1">
+                        <img src="image/search.png" class="search-icon" alt="searchIcon">
+                        <input  type="text" id="input-box" placeholder="Search Facebook" >
+                    </div>
+                </div>
+            </div>
+            <div class="result-box">
+                <h1>Gần đây</h1>
+                <ul class="pb">
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/x.png" class="x" alt="">
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div id="main-nav">
+        <div class="main-menu">
+            <div class="icon" tooltip-title="Home page" ><a href="index.html" ><img src="image/main menu/home.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Video"><a id="currentPage" href="video.html"><img src="image/main menu/video.png" alt=" " ></a></div>
+            <div class="icon" tooltip-title="Marketplace"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="image/main menu/marketplace.png"  alt=""></a></div>
+            <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png" alt=""  ></a></div>
+        </div>
+        </div>
+        <div class="right-nav" >
+            <div class="right-icon" tooltip-title="Menu" href="#" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Anouncement" href="#" tabindex="0" ><img src="image/notification.png" alt="" ></div>
+            <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="image/avatar1.png" alt="" id="accountImg" > </div>
+            
+            
+        </div>
+        <div id="setting-area" >
+            <div id="profile-area">
+                <a class="profile-box" href="profile.html" >
+                        <img src="image/avatar.png" alt="" >
+                        <p>Nguyen Tuan Duong</p>
+                </a>
+                <hr>
+                <br/>
+                <a class="p3" href="#">See all profiles</a>
+            </div>
+            <ul class="ul1">
+                <li><img src="image/setting.png" class="si" alt=""><p>Settings & privacy</p></li>
+                <li><img src="image/help.png" class="si" alt=""><p>Help & support</p></li>
+                <li><img src="image/darkmode.png"class="si" alt=""><p>Screen & accessibility</p></li>
+                <li><img src="image/feedback.png"class="si" alt=""><p>Feedback</p></li>
+                <li><img src="image/logout.png"class="si" alt=""><p>Log off</p></li>
+                
+            </ul>
+            <p class="p4">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023</p>
+
+        </div>
+
+
+        </header>
+        <footer>
+            <div id="main-nav-footer">
+                <div class="main-menu">
+                    <div class="icon" tooltip-title="Home page" ><a href="#" ><img src="image/main menu/home.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Video"><a id="currentPage" href="video.html"><img src="image/main menu/video.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Marketplace"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="image/main menu/marketplace.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png"  alt="" ></a></div>
+                </div>
+                </div>
+        </footer>
+
+    <div id="left-column-video-page">
+            <div id="head-lcvp">
+                <h3>Video</h3>  
+                <div class="imgBorder-item-list-lcvp"><img src="image/setting.png" alt="" class="mediumIcon"></div>
+            </div>
+            <div id="search-lcvp">
+                <img src="image/search.png" alt="" class="smallicon">
+                <input type="text" placeholder=" Search videos">
+            </div>
+            <div id="list-lcvp">
+                <div class="item-list-lcvp" id="currentItem"  >
+                    <div class="imgBorder-item-list-lcvp" id="currentIcon"><img src="image/tv.png" alt=""></div>
+                    <p>Home</p>
+                </div>
+                <div class="item-list-lcvp" id="item-2" >
+                    <div class="imgBorder-item-list-lcvp"><img src="image/streamblack.png" alt=""></div>
+                    <p>Live</p>
+                </div>
+                <div class="item-list-lcvp" id="item-3">
+                    <div class="imgBorder-item-list-lcvp"><img src="image/reels.png" alt=""></div>
+                    <p>Reels</p>
+                </div>
+                <div class="item-list-lcvp" id="item-4">
+                    <div class="imgBorder-item-list-lcvp"><img src="image/show.png" alt=""></div>
+                    <p>Shows</p>
+                </div>
+                <div class="item-list-lcvp" id="item-5">
+                    <div class="imgBorder-item-list-lcvp"><img src="image/explore.png" alt=""></div>
+                    <p>Explore</p>
+                </div>
+                <div class="item-list-lcvp" id="item-6" >
+                    <div class="imgBorder-item-list-lcvp"><img src="image/savedblack.png" alt=""></div>
+                    <p>Saved videos</p>
+                </div>
+            </div>
+            </div>
+
+    <div id="mainBody-video-page">
+        <div class="post">
+            <div class="post-header">
+                <div class="left-post-header">
+                    <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatarDo.jpg"  alt="" id="avatarImg" ></a></div>
+                    <div class="info">
+                        <a class="name" href="profile.html" >Độ Mixi</a>
+                        <p class="date">March 9,1999 at 23:59</p>
+                    </div>
+            </div>
+            <div class="option" >
+                <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                <div class="moreoption"><img src="image/x.png" alt=""></div>
+                
+            </div>
+        </div>
+            
+
+            <div class="post-content">
+                <div class="ct">
+                    <p class="caption" id="caption2" >
+                        
+                    </p>
+                        
+                </div>
+                <video class="video-post" controls>
+                    <source src="Video/Video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="post-footer">
+                <div class="interacts">
+                    <div class="left-interacts">
+                        <img src="image/like.png" alt="" >
+                        <p>175k</p>
+                    </div>
+                    <div class="right-interacts">
+                        <p>322</p>
+                        <img src="image/comment.png"  alt="">
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="interact-button">
+                    
+                        <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                        <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                        <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="left-post-header">
+                    <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatarBo.jpg"  alt="" id="avatarImg" ></a></div>
+                    <div class="info">
+                        <a class="name" href="profile.html" >Tui tên Bô</a>
+                        <p class="date">March 9,1999 at 23:59</p>
+                    </div>
+            </div>
+            <div class="option" >
+                <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                <div class="moreoption"><img src="image/x.png" alt=""></div>
+                
+            </div>
+        </div>
+            
+
+            <div class="post-content">
+                <div class="ct">
+                    <p class="caption" id="caption2" >
+                        Khứa này hài 
+                    </p>
+                        
+                </div>
+                <video class="video-post" controls>
+                    <source src="Video/Video3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="post-footer">
+                <div class="interacts">
+                    <div class="left-interacts">
+                        <img src="image/like.png" alt="" >
+                        <p>175k</p>
+                    </div>
+                    <div class="right-interacts">
+                        <p>322</p>
+                        <img src="image/comment.png"  alt="">
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="interact-button">
+                    
+                        <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                        <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                        <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="left-post-header">
+                            <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatarReviewphim.png"  alt="" id="avatarImg" ></a></div>
+                            <div class="info">
+                                <a class="name" href="profile.html" >Review phim</a>
+                                <p class="date">March 9,1999 at 23:59</p>
+                            </div>
+                    </div>
+                    <div class="option" >
+                        <div class="moreoption"><img src="image/3dots.png" alt=""></div>
+                        <div class="moreoption"><img src="image/x.png" alt=""></div>
+                        
+                    </div>
+                </div>
+                    
+    
+                    <div class="post-content">
+                        <div class="ct">
+                            <p class="caption" id="caption2" >
+                                Tên tội phạm bắt cóc và buôn bán trẻ em.
+                            </p>
+                        </div>
+                        <video class="video-post" controls>
+                            <source src="Video/video1.mp4" type="video/mp4">
+                          </video>
+                    </div>
+                    <div class="post-footer">
+                        <div class="interacts">
+                            <div class="left-interacts">
+                                <img src="image/like.png" alt="" >
+                                <p>2.4k</p>
+                            </div>
+                            <div class="right-interacts">
+                                <p>1012</p>
+                                <img src="image/comment.png"  alt="">
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="interact-button">
+                            
+                                <div class="block block-1" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                                <div class="block block-1" ><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                                <div class="block block-1" ><img src="image/share.png" alt="" ><p>Share</p></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+            <script type="text/javascript" src="video.js" ></script>
+    </body>
+</html>
