@@ -42,7 +42,7 @@ body,header,footer{
 body {
     background-color: #F0F2F5;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 header{
     margin-top: -1px;
@@ -1810,6 +1810,7 @@ button.toggleButton:hover{
     padding-top: 56px;
     height: 100vh;
     position: fixed;
+    left:1%;
     box-shadow: 5px 5px 5px #e1e1e1af ;
     z-index: 1;
 
