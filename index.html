@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <!-- <*****************Nav Bar************************ -->
 
         <div class="left-nav" >
-            <div class="item logo"><a href="#" ><img src="image/logo.ico" alt="logo" ></a></div>
+            <div class="item logo"><a href="index.html" ><img src="image/logo.ico" alt="logo" ></a></div>
             <div id="searchbar" onclick="show()" tabindex="0" onkeydown="handleKeyPress(event)">
                 <div class="row">
                     <img src="image/search.png" class="search-icon" alt="searchIcon" >
@@ -201,41 +202,57 @@
                 </div>
         </footer>
         <!--*****************Left-Side Bar************************ -->
-
-        
-        <div id="left-side-column" style="overflow-y: auto;height: 100vh;">
-            <ul class="side-bar">
+        <div id="left-side-column">
+            <ul class="side-bar" id="first-left-side-bar">
                 <li class="list"><a href="profile.html" class=""><img src="image/avatar.png" id="side-icon1" alt="" ><p >Nguyen Tuan Duong</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/friend.png" id="side-icon2" alt="" ><p >Friends</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/memory.png" id="side-icon3" alt="" ><p>Celebrate</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/saved.png" id="side-icon4" alt="" ><p>Saved</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/group-color.png" id="side-icon5" alt="" ><p>Group</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/video-color.png" id="side-icon6" alt="" ><p>Video</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/downarrow.png" id="side-icon7" alt="" ><p>See also</p> </a></li>
-                <br/>
-                <hr>
-                <br/>
-                <li class="list" id="title"><p-1>Your Shortcuts</p-1></li>
+                <li class="list"><a href="#" class=""><img src="image/friend.png" class="largeIcon" id="margin-left-12px"  alt="" ><p >Friends</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/memory.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Celebrate</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/saved.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Saved</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/group-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Group</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/video-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Video</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/adsCentre.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Ad centre</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/ad.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Ads Manager</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/blood-drop.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Blood Donations</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/climate-change.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Climate Science Centre</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/response.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Crisis Response</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/calendar.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Events</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/feeds.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Feeds</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/fundraising.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Fundraisers</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/video-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Gaming video</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/marketplace-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Marketplace</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/messenge-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Messenge</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/credit-card.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Orders and payments</p> </a></li>
+                <li class="list"><a href="video.html" class=""><img src="image/game-color.png" class="largeIcon" id="margin-left-12px" alt="" ><p>Play games</p> </a></li>
 
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 1</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 2</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 3</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 4</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 5</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 6</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 7</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 8</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Shortcut 9</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/downarrow.png" id="side-icon7" alt="" ><p>See also</p> </a></li>
-                <br/>
-                <li id="sidefeet">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023 </li>
+
             </ul>
-        </div>  
+
+            <li class="list" id="seeAlsoButton" onclick="expandSideBar1()" style="align-items: center; gap: 10px;"><img src="image/downarrow.png" id="downarrow" alt="" ><p id="text-seeAlsoButton-1">See also</p></li>
+                <hr>
+                <br>
+                <li class="list" id="title"><p-1>Your Shortcuts</p-1></li>
+            <ul class="side-bar"  id="second-left-side-bar">    
+                <li class="list"><a href="#" class=""><img src="image/hanuImg.jpg" id="side-icon8" alt="" ><p>BAN CÁN SỰ LỚP -HANU</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>(FIT-K22) Nhóm trao đổi PCO - Lớp Thầy Khoa</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K22 HANUers</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>Hanu.Lớp CB08.01.23 (Trần Đức Luân)</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>Thông báo chung FIT</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K23 HANUers</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/hanuImg.jpg" id="side-icon8" alt="" ><p>TRƯỜNG ĐẠI HỌC HÀ NỘI-OFFICIAL GROUP (NHÓM MỚI)</p> </a></li>
+
+
+                <li class="list"><a href="#" class=""><img src="image/fitImg.jpg" id="side-icon8" alt="" ><p>K22 FIT HANU</p> </a></li>
+
+
+            </ul>
+            <li class="list" id="seeAlsoButton" onclick="expandSideBar2()" style="align-items: center; gap: 10px;"><img src="image/downarrow.png" id="downarrow2" alt="" ><p id="text-seeAlsoButton-2">See also</p></li>
+            <li id="sidefeet">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023 </li>
+            </div>  
 
         <!--*****************Right-Side Bar************************-->
 
         <div id="right-side-column" style="overflow-y: auto;height: 546px;" >
-            <ul class="side-bar">
+            <ul class="side-bar-right">
                 <li class="list" id="title"><p-1>Sponsored</p-1></li>
 
                 <li class="list" id="sponsor"">
@@ -273,7 +290,7 @@
                 <li class="list" id="request"">
                     <img src="image/request2.jpg" alt="" tabindex="0"  >
                     <div href="#" class="area">
-                        <p id="name" tabindex="0">Justin bieber</p>
+                        <p id="name" tabindex="0">M-TP</p>
                         <div class="button" >
                             <button class="confirm" id="confirm">Confirm</button>
                             <button class="confirm" id="erase">Erase</button>
@@ -285,17 +302,17 @@
                 <br/>
                 <li class="list" id="title"><p-1>Contact Person</p-1></li>
 
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 1</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8"  alt=""><p>Person 2</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 3</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 4</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 5</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 6</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 7</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 8</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 9</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 10</p> </a></li>
-                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Person 11</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Phạm Thành Nguyên</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8"  alt=""><p>Minh Hoàn</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Nam Trần</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Nguyễn Trọng Hiếu</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Nguyễn Trưởng</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Cường Trần</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Tiến Vũ</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Quân Bảo</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Thao Pham</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Dương Thuỳ</p> </a></li>
+                <li class="list"><a href="#" class=""><img src="image/avatar.png" id="side-icon8" alt="" ><p>Minh Vũ</p> </a></li>
                 <br/>
                 <hr>
                 <br/>
@@ -316,7 +333,90 @@
             </ul>
             
         </div>             
-
+    <div id="noti-area">
+        <div id="bigText-noti-area">
+                <h1>Notifications</h1>
+                <img src="image/3dots.png" alt="" class="mediumIcon">
+        </div>
+        <div id="arrangeButton-noti-area">
+            <div id="item-arrangeButton-noti-area"><p>All</p></div>
+            <div id="item-arrangeButton-noti-area"><p>Unread</p></div>
+        </div>
+        <div id="earlier-text">
+            <p style="font-size: 22px;"><b>Earlier</b></p>
+            <p style="color:#9400FF">See all</p>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+        <div id="item-noti-area">
+            <div id="avatar-noti-area">
+                <img src="image/request1.jpg" alt="" class="avatarNoti">
+                <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>M-TP mentioned you in a comment in Sky tour.</p>
+                <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+            </div>
+        </div>
+    </div>
 <div id="center-column" >
         <div class="story-area"  >
                 <li class="story"><a href="#" class="st1"><img src="image/story1.png" alt=""  ><p ></p> </a></li>
@@ -331,7 +431,7 @@
         <div class="write-post-area">
             <div class="wa" >
                 <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatar1.png"  alt="" id="accountImg"></a></div>
-                <input type="text" id="tk" placeholder="What are you thinking?"onclick="show3()"  >
+                <input type="text" id="tk" placeholder="What's on your minh,Dương?"onclick="show3()"  >
             </div>
             <br/>
             <hr>
@@ -347,9 +447,15 @@
             </div>
         </div>
         <br/>
+
+
+
+
+
+
+
 <div class="main-content" >
 
-            
 
             <div class="post">
                 <div class="post-header">

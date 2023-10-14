@@ -70,9 +70,35 @@ function adjustWaText(){
         }
     }
 }
+function expandSideBar1(){
+    const isExpanded = document.getElementById("first-left-side-bar").style.maxHeight;
+    if( isExpanded == "none"){
+        document.getElementById("first-left-side-bar").style.maxHeight = "260px"
+        document.getElementById("text-seeAlsoButton-1").textContent = "See More"
+        document.getElementById("downarrow").style.rotate = "0deg";
+    }
+    else{
+        document.getElementById("downarrow").style.rotate = "180deg";
+        document.getElementById("first-left-side-bar").style.maxHeight = "none"
+        document.getElementById("text-seeAlsoButton-1").textContent = "See less"
+    }
+}
+function expandSideBar2(){
+    const isExpanded = document.getElementById("second-left-side-bar").style.maxHeight;
+    if( isExpanded == "none"){
+        document.getElementById("second-left-side-bar").style.maxHeight = "260px"
+        document.getElementById("text-seeAlsoButton-2").textContent = "See More"
+        document.getElementById("downarrow2").style.rotate = "0deg";
+    }
+    else{
+        document.getElementById("downarrow2").style.rotate = "180deg";
+        document.getElementById("second-left-side-bar").style.maxHeight = "none"
+        document.getElementById("text-seeAlsoButton-2").textContent = "See less"
+    }
+}
+
 adjustWaText();
 adjustMainNavDisplay();
-
 adjustSearchBar();
 
 window.addEventListener('resize', adjustMainNavDisplay);

@@ -13,7 +13,8 @@
 
 .left-nav:hover::-webkit-scrollbar,
 #mainbody-profile-page::-webkit-scrollbar,
-#list-lcvp::-webkit-scrollbar{
+#list-lcvp::-webkit-scrollbar,
+#noti-area::-webkit-scrollbar{
     display:none;
 }
 *:hover::-webkit-scrollbar{
@@ -447,28 +448,57 @@ button {
 
 #left-side-column {
     background-color: #F0F2F5;
-    display: flex;
     margin-top: 56px;
     width: 22%;
     position: fixed;
     left:1vw;
+    max-height: 92vh;
+    overflow-y: auto;
 }
 .side-bar {
     padding-top: 17px;
-    padding-left: 5px;
     padding-right: 0px;
+    /* max-height: 260px ; */
+    overflow: hidden;
     
 }
+#first-left-side-bar{
+    max-height: 260px;
+    overflow: hidden;
+}
+#second-left-side-bar{
+    max-height: 260px;
+    overflow: hidden;
+}
+.side-bar-right {
+    padding-top: 17px;
+    padding-left: 5px;
+    padding-right: 0px;
 
+    
+}
 .list {
     /* background-color: #8a8a8a; */
-    height: 44px;
+    height: 52px;
     width: 260px;
     border-radius: 8px;
     display: flex;
     cursor: pointer;
 
     /* background-color: #F0F2F5; */
+}
+
+.largeIcon{
+    height: 28px;
+    width: 28px;
+}
+
+#seeAlsoButton{
+
+}
+#seeAlsoButton:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
 }
 .list a{
     display: flex;
@@ -483,62 +513,35 @@ button {
     font-weight: 500;
 }
 #side-icon1{
-    
-    /* background-color: #403f3f; */
     height:35px;
     width: 35px;
     margin-left: 5px;
-
 }
-#side-icon2{
-    
-    /* background-color: #403f3f; */
-    height:20px;
-    width: 25px;
-    padding-left: 11px;
-    margin-right: 3px;
+#margin-left-12px{
+    margin-left: 10px;
+    margin-right: 2px;
 }
-#side-icon3{
-    
-    /* background-color: #403f3f; */
-    height:24px;
-    width: 24px;
-    padding-left: 10.5px;
-    margin-right: 4.5px
-}
-#side-icon4{
-    
-    /* background-color: #403f3f; */
-    height:24px;
-    width: 15px;
-    padding-left: 14.7px;
-    margin-right: 9.3px
-}
-#side-icon5{
-    
-    /* background-color: #403f3f; */
-    height:22px;
-    width: 22px;
-    padding-left: 11px;
-    margin-right: 6px
-}
-#side-icon6{
-    
-    /* background-color: #403f3f; */
-    height:22px;
-    width: 22px;
-    padding-left: 11.5px;
-    margin-right: 5.5px
-}
-#side-icon7{
+#downarrow{
     
     background-color: #D8DADF;
-    height:7px;
-    width: 10px;
-    margin-left: 10px;
-    margin-right: 5px;
-    padding: 8px 7px 8px 7px;
+    height:20px;
+    width: 20px;
+    margin-left: 9px;
+    margin-right: 1px;
+    padding: 5px;
     border-radius: 100px;
+
+}
+#downarrow2{
+    
+    background-color: #D8DADF;
+    height:20px;
+    width: 20px;
+    margin-left: 9px;
+    margin-right: 1px;
+    padding: 5px;
+    border-radius: 100px;
+
 }
 
 #title{
@@ -561,11 +564,11 @@ button {
 }
 
 #side-icon8{
-    
     /* background-color: #403f3f; */
     height:35px;
     width: 35px;
-    padding-left: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
 }
 
 ul li:hover {
@@ -776,7 +779,7 @@ hr{
     align-items: center;
     /* background-color: violet; */
     height: 40px;
-    width: 33%;
+    width: 30%;
     border-radius: 5px;
 }
 .block:hover{
@@ -892,7 +895,7 @@ button.toggleButton:hover{
     width:100% ;
 }
 .post-footer{
-    height: 70px; 
+    height: fit-content; 
     /* padding-bottom: 2px; */
     /* background-color:green ;   */
 }
@@ -929,6 +932,8 @@ button.toggleButton:hover{
     margin:10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 30px;
     
 
 }
@@ -1276,7 +1281,7 @@ button.toggleButton:hover{
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
     #center-column{
         margin:80px auto;
     }
@@ -1295,8 +1300,8 @@ button.toggleButton:hover{
 }
 #profile-area-page{
     /* background-color:  tan; */
-    width: 100%;
-    max-width: 1000px;
+    width: 100vw;
+    /* max-width: 1000px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1336,6 +1341,7 @@ button.toggleButton:hover{
 #background-menu{
     width: 180px;
     height:100px;
+
     margin-left:-180px;
     margin-right: 10px;
     display:flex ;
@@ -1348,7 +1354,8 @@ button.toggleButton:hover{
 #background-menu-item{
     width: 150px;
     height: 35%;
-    background-color: #1c1c1c;
+    padding: 0 5px;
+    background-color: #3d3d3d;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -1397,7 +1404,7 @@ button.toggleButton:hover{
 #friend-text{
     padding: 5px;
 }
-.largeicon{
+.avatarIcon{
     height: 150px;
     width: 150px;
     border: 5px solid white;
@@ -1673,7 +1680,7 @@ button.toggleButton:hover{
     padding-top:2px;
 
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1050px){
     #background-menu {
         width: 40px;
         margin-left:-60px;
@@ -1688,8 +1695,6 @@ button.toggleButton:hover{
         display: none;
         
     }
-
-
 
     #avatar-area{
         height: fit-content;
@@ -1763,6 +1768,7 @@ button.toggleButton:hover{
         align-items: center;
         overflow: visible;
         width: 100vw;
+        height: fit-content;
 
     }
     .post-profile-page{
@@ -1809,7 +1815,7 @@ button.toggleButton:hover{
 #left-column-video-page{
     background-color: white;
     width: 360px;
-    height: 92.5vh;
+    height: 99vh;
     position: fixed;
     left:0.5%;
     box-shadow: 5px 5px 5px #e1e1e1af ;
@@ -2078,4 +2084,87 @@ button.toggleButton:hover{
     #item-body-mainBody-marketplace-page{
         width: 98%;
     }
+}
+
+
+
+#noti-area{
+    position:fixed;
+    z-index: 2;
+    right:1%;
+    margin-top: 50px;
+    height: 90%;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px #e1e1e1af ;
+    overflow: overlay;
+
+
+}
+#bigText-noti-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 20px;
+    height: fit-content;
+}
+#arrangeButton-noti-area{
+    display: flex;
+}
+#item-arrangeButton-noti-area{
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 0 10px;
+    background-color: #E4E6E9;
+    border-radius: 20px;
+}
+#earlier-text{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    padding: 20px;
+
+}
+#list-noti-area{
+    padding: 0 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+#item-noti-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 10px;
+    gap: 10px;
+}
+#avatar-noti-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.avatarNoti{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+#smallStickyIcon{
+    background-color: #4ECB6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+
+}
+#text-item-noti-area{
+    height: 60px;
 }
