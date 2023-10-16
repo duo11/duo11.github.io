@@ -153,14 +153,14 @@
             <div class="icon" tooltip-title="Home page" ><a href="index.html" ><img src="image/main menu/home.png" alt="" ></a></div>
             <div class="icon" tooltip-title="Video"><a id="currentPage" href="video.html"><img src="image/main menu/video.png" alt=" " ></a></div>
             <div class="icon" tooltip-title="Marketplace"><a href="marketplace.html"><img src="image/main menu/marketplace.png"  alt=""></a></div>
-            <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
-            <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png" alt=""  ></a></div>
+            <div class="icon" tooltip-title="Group"><a href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Game"><a href="game.html"><img src="image/main menu/game.png" alt=""  ></a></div>
         </div>
         </div>
         <div class="right-nav" >
             <div class="right-icon" tooltip-title="Menu" href="#" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
             <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
-            <div class="right-icon" tooltip-title="Anouncement" href="#" tabindex="0" ><img src="image/notification.png" alt="" ></div>
+            <div class="right-icon" tooltip-title="Notifications" onclick="expandNotiArea()" tabindex="0" ><img src="image/notification.png" alt="" ></div>
             <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="image/avatar1.png" alt="" id="accountImg" > </div>
             
             
@@ -195,13 +195,96 @@
                     <div class="icon" tooltip-title="Home page" ><a href="index.html" ><img src="image/main menu/home.png" alt="" ></a></div>
                     <div class="icon" tooltip-title="Video"><a id="currentPage" href="video.html"><img src="image/main menu/video.png" alt="" ></a></div>
                     <div class="icon" tooltip-title="Marketplace"><a href="marketplace.html"><img src="image/main menu/marketplace.png" alt="" ></a></div>
-                    <div class="icon" tooltip-title="Group"><a href="#"><img src="image/main menu/group.png" alt="" ></a></div>
-                    <div class="icon" tooltip-title="Game"><a href="#"><img src="image/main menu/game.png"  alt="" ></a></div>
+                    <div class="icon" tooltip-title="Group"><a href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Game"><a href="game.html"><img src="image/main menu/game.png"  alt="" ></a></div>
                 </div>
                 </div>
         </footer>
-
-    <div id="left-column-video-page"">
+        <div id="noti-area">
+            <div id="bigText-noti-area">
+                    <h1>Notifications</h1>
+                    <img src="image/3dots.png" alt="" class="mediumIcon">
+            </div>
+            <div id="arrangeButton-noti-area">
+                <div id="item-arrangeButton-noti-area"><p style="color: #9400FF;">All</p></div>
+                <div id="item-arrangeButton-noti-area"><p>Unread</p></div>
+            </div>
+            <div id="earlier-text">
+                <p style="font-size: 22px;"><b>Earlier</b></p>
+                <p style="color:#9400FF">See all</p>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+        </div>
+    <div id="left-column-video-page"" >
             <div id="head-lcvp">
                 <h3>Video</h3>  
                 <div class="imgBorder-item-list-lcvp"><img src="image/setting.png" alt="" class="mediumIcon"></div>

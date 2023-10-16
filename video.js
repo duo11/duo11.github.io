@@ -39,6 +39,17 @@ function adjustSearchBar(){
     }
 
 }
+function expandNotiArea(){
+    const isExpanded = document.getElementById("noti-area").style.display;
+    if(isExpanded == "block"){
+        document.getElementById("noti-area").style.display = "none";
+
+    }
+    else{
+        document.getElementById("noti-area").style.display = "block";
+
+    }
+}
 adjustSearchBar();
 adjustMainNavDisplay();
 window.addEventListener('resize', adjustMainNavDisplay);
@@ -68,3 +79,15 @@ window.addEventListener('scroll', () => {
     
     lastScroll = scroll;    
 });
+
+
+
+let scrollBar = document.getElementById('scrollbararea');
+const curorPosition = document.getElementById('test');
+curorPosition.addEventListener('mouseenter',(event) =>{
+    scrollBar.style.display = "none";
+});
+curorPosition.addEventListener('mouseleave',(event) =>{
+    scrollBar.style.display = "block";
+});
+

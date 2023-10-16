@@ -74,7 +74,7 @@ function expandSideBar1(){
     const isExpanded = document.getElementById("first-left-side-bar").style.maxHeight;
     if( isExpanded == "none"){
         document.getElementById("first-left-side-bar").style.maxHeight = "260px"
-        document.getElementById("text-seeAlsoButton-1").textContent = "See More"
+        document.getElementById("text-seeAlsoButton-1").textContent = "See more"
         document.getElementById("downarrow").style.rotate = "0deg";
     }
     else{
@@ -87,7 +87,7 @@ function expandSideBar2(){
     const isExpanded = document.getElementById("second-left-side-bar").style.maxHeight;
     if( isExpanded == "none"){
         document.getElementById("second-left-side-bar").style.maxHeight = "260px"
-        document.getElementById("text-seeAlsoButton-2").textContent = "See More"
+        document.getElementById("text-seeAlsoButton-2").textContent = "See more"
         document.getElementById("downarrow2").style.rotate = "0deg";
     }
     else{
@@ -96,7 +96,17 @@ function expandSideBar2(){
         document.getElementById("text-seeAlsoButton-2").textContent = "See less"
     }
 }
+function expandNotiArea(){
+    const isExpanded = document.getElementById("noti-area").style.display;
+    if(isExpanded == "block"){
+        document.getElementById("noti-area").style.display = "none";
 
+    }
+    else{
+        document.getElementById("noti-area").style.display = "block";
+
+    }
+}
 adjustWaText();
 adjustMainNavDisplay();
 adjustSearchBar();

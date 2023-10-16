@@ -152,8 +152,8 @@
         <div class="main-menu">
             <div class="icon" tooltip-title="Home page" ><a href="index.html" ><img src="image/main menu/home.png" alt="" ></a></div>
             <div class="icon" tooltip-title="Video"><a href="video.html"><img src="image/main menu/video.png" alt=" " ></a></div>
-            <div class="icon" tooltip-title="Marketplace"><a id="currentPage"  href="marketplace.html"><img src="image/main menu/marketplace.png"  alt=""></a></div>
-            <div class="icon" tooltip-title="Group"><a href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Marketplace"><a   href="marketplace.html"><img src="image/main menu/marketplace.png"  alt=""></a></div>
+            <div class="icon" tooltip-title="Group"><a id="currentPage" href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
             <div class="icon" tooltip-title="Game"><a href="game.html"><img src="image/main menu/game.png" alt=""  ></a></div>
         </div>
         </div>
@@ -162,9 +162,8 @@
             <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
             <div class="right-icon" tooltip-title="Notifications" onclick="expandNotiArea()" tabindex="0" ><img src="image/notification.png" alt="" ></div>
             <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="image/avatar1.png" alt="" id="accountImg" > </div>
-            
-            
         </div>
+    <!-- <div id="noti-area-searchbar" style="overflow-y: auto ;height: fit-content;width: 100%;display: flex;position: fixed;" > -->
         <div id="noti-area">
             <div id="bigText-noti-area">
                     <h1>Notifications</h1>
@@ -249,6 +248,9 @@
                 </div>
             </div>
         </div>
+        <!-- <div id="scrollbararea" style="height: 100%;width: 0px;padding: 0 4 px;display: block;"></div>
+    </div> -->
+
         <div id="setting-area" >
             <div id="profile-area">
                 <a class="profile-box" href="profile.html" >
@@ -278,243 +280,174 @@
                 <div class="main-menu">
                     <div class="icon" tooltip-title="Home page" ><a href="index.html" ><img src="image/main menu/home.png" alt="" ></a></div>
                     <div class="icon" tooltip-title="Video"><a  href="video.html"><img src="image/main menu/video.png" alt="" ></a></div>
-                    <div class="icon" tooltip-title="Marketplace"><a id="currentPage" href="marketplace.html"><img src="image/main menu/marketplace.png" alt="" ></a></div>
-                    <div class="icon" tooltip-title="Group"><a href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Marketplace"><a  href="marketplace.html"><img src="image/main menu/marketplace.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Group"><a id="currentPage" href="group.html"><img src="image/main menu/group.png" alt="" ></a></div>
                     <div class="icon" tooltip-title="Game"><a href="game.html"><img src="image/main menu/game.png"  alt="" ></a></div>
                 </div>
                 </div>
         </footer>
+
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+
+
+
 <div id="body-marketplace-page">
     <div id="left-column-marketplace-page" >
             <div id="head-lcmp">
-                <h2>Marketplace</h2>  
+                <h2>Groups</h2>  
                 <div class="imgBorder-item-list-lcvp"><img src="image/setting.png" alt="" class="mediumIcon"></div>
             </div>
-            <div style="overflow-y: auto ;height: 89%;width: 100%;">
+            <div id="test" style="overflow-y: auto ;height: 89%;width: 100%;display: flex;">
+                <div style="width: 100%;">
                     <div id="search-lcvp">
                         <img src="image/search.png" alt="" class="smallicon">
-                        <input type="text" placeholder=" Search Marketplace">
+                        <input type="text" placeholder=" Search groups">
                     </div>
                     <div id="list-lcvp">
                         <div class="item-list-lcvp" id="currentItem" tabindex="0" >
-                            <div class="imgBorder-item-list-lcvp" id="currentIcon"><img src="image/marketplaceWhite.png" alt=""></div>
-                            <p>Browse all</p>
+                            <div class="imgBorder-item-list-lcvp" id="currentIcon"><img src="image/feeds.png" alt=""></div>
+                            <p>Your feed</p>
                         </div>
                         <div class="item-list-lcvp" id="item-2" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp"><img src="image/notification.png" alt=""></div>
-                            <p>Notification</p>
+                            <div class="imgBorder-item-list-lcvp"><img src="image/compass.png" alt=""></div>
+                            <p>Discover</p>
                         </div>
                         <div class="item-list-lcvp" id="item-3" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp"><img src="image/inbox.png" alt=""></div>
-                            <p>Inbox</p>
+                            <div class="imgBorder-item-list-lcvp"><img src="image/groupNoCircle.png" alt=""></div>
+                            <p>Your groups</p>
                         </div>
-                        <div class="item-list-lcvp" id="item-4" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp"><img src="image/buying.png" alt=""></div>
-                            <p>Buying</p>
+                        <div id="createGroupButton" id="item-4" tabindex="0" >
+                            <img src="image/plusButtonColor.png" alt="" class="smallicon">
+                            <p>Create New Group</p>
                         </div>
-                        <div class="item-list-lcvp" id="item-5" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp"><img src="image/selling.png" alt=""></div>
-                            <p>Selling</p>
-                        </div>
+                       
                     </div>
+                    <br>
                     <hr style="width: 95%; color: #F0F2F5;">
-                    <div id="filterArea-lcvp" style="margin: 0 10px;">
-                        <h1 style="font-size: 23px; margin: 10px 0;">Filter</h1>
-                        <p style="color: #9400FF;">100 Nguyen Trai, Thanh Xuan, Ha Noi, Viet Nam .   Within <b>10</b> kilometers </p>
+                    <div id="filterArea-lcvp" style="margin: 0 10px;display: flex;align-items: center;justify-content: space-between;">
+                        <h1 style="font-size: 17px; margin: 10px 0;">Groups you've joined</h1>
+                        <p style="color: #9400FF;cursor: pointer;">See all</p>
                     </div>
-                    <hr style="width: 95%; color: #F0F2F5;margin:10px 0;">
-                    <div id="list-lcvp">
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/car.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Vehicles</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/propertyforrent.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Properties for rent</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/clothing.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Clothing</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/phone.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Electronics</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/videography.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Entertainment</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/heart.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Family</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/gardening.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Garden & outdoors</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/hobby.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Hobbies</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/homegood.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Home goods</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/wrench.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Home improvement supplies</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/guitar-instrument.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Musical instruments</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/stationery.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Office supplies</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/pawprint.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Pet supplies</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/sport.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Sporting goods</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/game-controller.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Toys & games</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/group.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Buy-and-sell groups</p>
-                        </div>
-                        <div class="item-list-lcvp" tabindex="0">
-                            <div class="imgBorder-item-list-lcvp" >
-                                <img src="image/propertyforrent.png" alt="" class="mediumIcon">
-                            </div>
-                            <p>Property for sale</p>
-                        </div>
+                    <div id="list-lcvp"">
+                        <ul class="side-bar"  id="second-left-side-bar" style="max-height:none;padding: 0 5px;">
+                            <li class="list"><a href="#" class=""><img src="image/hanuImg.jpg" id="side-icon8" alt="" ><p>BAN CÁN SỰ LỚP -HANU</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>(FIT-K22) Nhóm trao đổi PCO - Lớp Thầy Khoa</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K22 HANUers</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>Hanu.Lớp CB08.01.23 (Trần Đức Luân)</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/schoolimg.png" id="side-icon8" alt="" ><p>Thông báo chung FIT</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K23 HANUers</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/hanuImg.jpg" id="side-icon8" alt="" ><p>TRƯỜNG ĐẠI HỌC HÀ NỘI-OFFICIAL GROUP (NHÓM MỚI)</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="image/fitImg.jpg" id="side-icon8" alt="" ><p>K22 FIT HANU</p> </a></li>
+                        </ul>
+                        
+                        
                     </div>
-                </div>    
+                </div>  
+                <div id="scrollbararea" style="height: 100%;width: 8px;display: block;"></div>
+            </div>
         </div>
+
+
+
+
+
         <div id="left-column-marketplace-page-after">
             <div id="head-lcmp-after" >
                 <div id="item-head-lcmp-after" tabindex="0">
-                    <img src="image/user.png" alt="" class="mediumIcon" >
+                    <p>Your feed</p>
+
                 </div>
                 <div id="item-head-lcmp-after" tabindex="0">
-                    <p>Sell</p>
+                    <p>Discover</p>
                 </div>
                 <div id="item-head-lcmp-after" tabindex="0" >
-                    <p>All categories</p>
+                    <p>Your group</p>
                 </div>
             </div>
-            <div id="search-lcmp-after" ><input type="text" placeholder="Search marketplace"></div>
+            <div id="search-lcmp-after" ><input type="text" placeholder="Search groups"></div>
         </div>
-    <div id="mainBody-marketplace-page" style=" width: 100%; ">
-        <div id="head-mainBody-marketplace-page" style="display: flex;justify-content: space-between;align-items: center; height: 50px;margin:20px 0 ; " >
-            <h1 style="line-height: 30px;">Today's picks</h1>
-            <div style="display: flex;align-items: center;">
-                <img src="image/pin.png" alt="" class="mediumIcon">
-                <p>Hai Phong . 65km</p>
+
+
+
+
+
+    <div id="mainBody-marketplace-page" style=" width: 100%; display: flex; margin-top: 15px; ">
+        <div id="postArea-group-page" style="background-color: silver;width: 40vw;height: 700px;display: flex;">
+            <div>
+            <p style="height: fit-content;margin: 20px 10px 10px 10px;">Recent activities</p>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="left-post-header">
+                            <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="image/avatarviewsonic.jpg"  alt="" id="avatarImg"></a></div>
+                            <div class="info">
+                                <a class="name" href="profile.html" >ViewSonic</a>
+                                <p class="date">March 9,1999 at 23:59</p>
+                            </div>
+                    </div>
+                    <div class="option" >
+                        <div class="moreoption" tabindex="0"><img src="image/3dots.png" alt=""></div>
+                        <div class="moreoption" tabindex="0"><img src="image/x.png" alt=""></div>
+                        
+                    </div>
+                </div>
+                    
+    
+                    <div class="post-content">
+                        <div class="ct">
+                            <div>
+                                
+                                <p class="caption" id="caption1" >
+                                    [Campus Tour x HUCE x ViewSonic] 
+                                Tomorrowland
+                                Campus Tour là chuỗi sự kiện được tổ chức bởi Intel Việt Nam dành riêng cho các bạn sinh viên đam mê công nghệ tại Hà Nội. Cho tới nay, Campus Tour đã trải qua 4 mùa với hàng loạt thành tích nổi bật như: 07 trường Đại học tại Hà Nội, 20.000+ sinh viên tham dự offline, 1.000.000+ lượt tiếp cận trên các kênh truyền thông, 15+ đối tác là các hãng công nghệ nổi tiếng…
+                                Tháng 9 này, Campus Tour sẽ kết hợp cùng ViewSonic để trở lại với một hình ảnh và format hoàn toàn mới lạ, năng động hơn, trẻ trung hơn và sẽ có màn tái ngộ với Trường Đại học Xây dựng Hà Nội - là nơi đã diễn ra mùa đầu tiên. Trở lại với HUCE lần này, Intel cùng ViewSonic hứa hẹn sẽ mang đến cho các bạn sinh viên một sân chơi độc đáo, cuốn hút với các hoạt động xuyên suốt như: Khu vực trải nghiệm đa chủ đề; Khu vực trưng bày PC EXPO, Watch Party TFT, Workshop giao lưu với KOL nổi tiếng Tân Một Cú và cơ hội được tham gia Gameshow tương tác trực tiếp cùng hàng ngàn phần quà hấp dẫn đang chờ các bạn!
+                                Các bạn sinh viên Trường Đại học Xây dựng ơi! Các bạn đã sẵn sàng chưa? Hẹn gặp các bạn vào Thứ 4 Ngày 20/9 này nhé!!!
+                                -------------------------------
+                                Campus Tour Season 5 - Tomorrowland
+                                Chuỗi sự kiện về công nghệ dành riêng cho sinh viên các trường Đại học tại Hà Nội.
+                                👉🏻Fanpage chính thức của chương trình: https://www.facebook.com/vietnamcampustour
+                                #CampusTour2023 #CampusTour #Intel #VietnamCampusTour #Tomorrowland #ViewSonic
+                                </p>
+                                    <p class="dot" id="dot1">...</p>
+                                <button class="toggleButton" href="caption1" id="1">See more</button>
+                            </div>
+                        </div>
+                        <img src="image/sponsor1.jpg" alt="" >
+                    </div>
+                    <div class="post-footer">
+                        <div class="interacts">
+                            <div class="left-interacts">
+                                <img src="image/like.png" alt="" >
+                                <p>1.2k</p>
+                            </div>
+                            <div class="right-interacts">
+                                <p>210</p>
+                                <img src="image/comment.png"  alt="">
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="interact-button">
+                            
+                                <div class="block block-1" tabindex="0" ><img src="image/likewhite.png" alt="" ><p>Like</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="image/comment.png" alt="" ><p>Comment</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="image/share.png" alt="" ><p>Share</p></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
-        <div id="body-mainBody-marketplace-page">
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem1.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 6.***.***.***</h2>
-                <p>Ducati</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem2.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 2.***.***.***</h2>
-                <p>Chung cư 2n1k</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem3.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 3.000.000</h2>
-                <p>Ghi-ta điện</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem4.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 2.000.000</h2>
-                <p> Giày Nike</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem5.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 6.000.000.000</h2>
-                <p>Mecedes g63 trắng</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem6.png" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 1.000.000</h2>
-                <p> Áo khoác Uniqlo U</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem7.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 12.490.000</h2>
-                <p>Derby shoe</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem8.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 40.000.000</h2>
-                <p>Macbook pro M2</p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
-            <div id="item-body-mainBody-marketplace-page" >
-                <img src="image/marketItem5.jpg" alt="" class="marketItemImg" tabindex="0">
-                <h2> đ 6.000.000.000</h2>
-                <p></p>
-                <p>Ha noi, Viet Nam</p>
-
-            </div>
+        <div style="width: 28vw;">
+        hello
+        </div>
+        <div  id="groupChatArea-group-page" style="background-color: aqua;width: 28%;height: 80vh;right: 1%;border-radius: 10px;position: fixed;">
+            hi
         </div>
                 
     </div>

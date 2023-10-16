@@ -52,6 +52,17 @@ function adjustMainNavDisplay(){
     }
     
 }
+function expandNotiArea(){
+    const isExpanded = document.getElementById("noti-area").style.display;
+    if(isExpanded == "block"){
+        document.getElementById("noti-area").style.display = "none";
+
+    }
+    else{
+        document.getElementById("noti-area").style.display = "block";
+
+    }
+}
 adjustMainNavDisplay();    
 adjustSearchBar();
 window.addEventListener('resize', adjustMainNavDisplay);

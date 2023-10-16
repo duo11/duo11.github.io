@@ -480,7 +480,7 @@ button {
 .list {
     /* background-color: #8a8a8a; */
     height: 52px;
-    width: 260px;
+    width: 98%;
     border-radius: 8px;
     display: flex;
     cursor: pointer;
@@ -493,9 +493,6 @@ button {
     width: 28px;
 }
 
-#seeAlsoButton{
-
-}
 #seeAlsoButton:hover{
     cursor: pointer;
     background-color: #E4E6E9;
@@ -1966,10 +1963,10 @@ button.toggleButton:hover{
 }
 #body-marketplace-page{
     width:100%;
-    padding:0 32px; 
+    /* padding:0 32px;  */
     display: flex;
     margin-top: 60px;
-    margin-left: 370px;
+    margin-left: 375px;
     left:1%;
 }
 
@@ -1977,6 +1974,7 @@ button.toggleButton:hover{
 #left-column-marketplace-page{
     background-color: white;
     width: 360px;
+
     height: 92.5vh;
     position: fixed;
     left:0.5%;
@@ -2094,11 +2092,12 @@ button.toggleButton:hover{
     right:1%;
     margin-top: 50px;
     height: 90%;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 5px 2px #e1e1e1af ;
     overflow: overlay;
+    display: none;
 
 
 }
@@ -2109,15 +2108,22 @@ button.toggleButton:hover{
     margin: 15px 20px;
     height: fit-content;
 }
+#bigText-noti-area h1{
+    font-size: 20px;
+}
 #arrangeButton-noti-area{
     display: flex;
 }
 #item-arrangeButton-noti-area{
     width: fit-content;
     padding: 5px 15px;
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: #E4E6E9;
     border-radius: 20px;
+}
+#item-arrangeButton-noti-area:hover{
+    cursor: pointer;
+    background-color: #D8DADF;
 }
 #earlier-text{
     display: flex;
@@ -2168,3 +2174,24 @@ button.toggleButton:hover{
 #text-item-noti-area{
     height: 60px;
 }
+
+#createGroupButton{
+    background-color: #f7eaff;
+    color:#9400FF;
+    width: 98%;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+#createGroupButton:hover{
+    background-color: #edd9fc;
+    cursor: pointer;
+}
+
+
+
