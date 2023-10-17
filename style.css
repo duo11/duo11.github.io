@@ -1963,10 +1963,12 @@ button.toggleButton:hover{
 }
 #body-marketplace-page{
     width:100%;
+    /* height: fit-content; */
     /* padding:0 32px;  */
     display: flex;
     margin-top: 60px;
-    margin-left: 375px;
+    margin-left: 365px;
+    padding: 0 20px;
     left:1%;
 }
 
@@ -1974,7 +1976,6 @@ button.toggleButton:hover{
 #left-column-marketplace-page{
     background-color: white;
     width: 360px;
-
     height: 92.5vh;
     position: fixed;
     left:0.5%;
@@ -2032,8 +2033,6 @@ button.toggleButton:hover{
         display: flex;
         flex-direction: column;
         background-color: white;
-        margin-left: -30px;
-
         width: 100%;
     }
     #head-lcmp-after{
@@ -2049,6 +2048,7 @@ button.toggleButton:hover{
         border-radius: 15px;
         width: fit-content;
         height: 30px;
+        min-height: fit-content;
         padding:0 10px;
 
     }
@@ -2062,7 +2062,7 @@ button.toggleButton:hover{
     }
     #search-lcmp-after input{
         background-color: #F0F2F5;
-        width: 96%;
+        width: 93%;
         height: 30px;
         padding:0 10px;
         border-radius: 150px;
@@ -2174,7 +2174,15 @@ button.toggleButton:hover{
 #text-item-noti-area{
     height: 60px;
 }
-
+#body-group-page{
+    width:100%;
+    /* padding:0 32px;  */
+    display: flex;
+    margin-top: 60px;
+    margin-left: 365px;
+    padding: 0 10px;
+    left:1%;
+}
 #createGroupButton{
     background-color: #f7eaff;
     color:#9400FF;
@@ -2194,4 +2202,411 @@ button.toggleButton:hover{
 }
 
 
+.item-groupChat{
+    width: 94%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    margin-bottom: 10px;
 
+}
+.img-item-groupChat{
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+}
+#smallIconGroupChat{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #D8DADF;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: white solid 3px;
+}
+#groupChatArea-group-page{
+    background-color: white;
+    max-width: 350px;
+    height: 80vh;
+    right: 15px;
+    border-radius: 10px;
+    position: fixed;    
+    box-shadow: 2px 2px 10px 2px #d0cfcfaf;
+    display: block;
+
+}
+#groupChatArea-group-page2{
+    display: none;
+    margin: 10px auto;
+    flex-shrink: 5;
+    background-color: white;
+    width: 98%;
+    height: fit-content;
+    right: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #d0cfcfaf;
+}
+
+@media only screen and (max-width: 1550px){
+    #groupChatArea-group-page{
+        display: none;
+    }
+    #groupChatArea-group-page2{
+        display:inline;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+    #invisibleBox{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1150px){
+    
+    #groupChatArea-group-page{
+        display: none;
+    }
+    
+    #invisibleBox{
+        display: none;
+    }
+}
+@media only screen and (max-width: 950px){
+    #body-group-page{
+        margin-left: 0px;
+        padding: 0;
+
+    }
+    #groupChatArea-group-page2{
+        margin: 100px auto 0 auto;
+    }
+
+}
+.list-game-page{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    /* height: 16vw; */
+
+
+
+}
+#gameWeLove{
+    /* height: 16vw; */
+    overflow: hidden;
+    /* max-height: 500px; */
+}
+#topPicksForYou{
+    height: 33vw;
+    overflow: hidden;
+    max-height: 1010px;
+}
+.eachColimn-item-list-game-page{
+    width: 16vw;
+    height: 33vw;
+    max-width: 500px;
+    max-height: 1010px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-list-game-page{
+    width: 16vw;
+    height: 16vw;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.poster{
+    width: 16vw;
+    height: 16vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+.poster1{
+    width: 16vw;
+    height: 16vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+#bigPoster{
+    width: 16vw;
+    height: 33vw;
+    max-width: 500px;
+    max-height: 1010px;
+}
+.name-item-game-page{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.8);
+    height: 30%;
+    max-height: 70px;
+    
+}
+.text-name-item-game-page{
+    padding: 0px 10px;
+}
+.playerNumber{
+    width: fit-content;
+    padding: 1%;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(44, 44, 44) ;
+    color: white;
+    border-radius: 13px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.happening-list-game-page{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.item-happening-list-game-page{
+    height: 21.5vw;
+    width: 21.5vw;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.item-happening-list-game-page .head{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    gap: 10px;
+    height: 10%;
+}
+.item-happening-list-game-page .image{
+    width: 100%;
+    height: 50%;
+}
+.item-happening-list-game-page .footer{
+    padding: 10px;
+}
+.item-happening-list-game-page p{
+    font-size: 15px;
+    width: 98%;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.mostPlayed-list{
+    display: flex;
+    gap: 10px;
+}
+.item-mostPlayed-list{
+    width: 16vw;
+    height: 33vw;
+    max-width: 500px;
+    max-height: 1010px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.item-mostPlayed-list img{
+    filter: brightness(80%);
+}
+.item-mostPlayed-list p{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: white;
+    font-size: 25px;
+
+}
+
+#video-game-page{
+    position: relative;
+}
+#text-video-game-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    width: 95%;
+    right: 2%;
+    
+    
+}
+.largerIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.item-allGame-list{
+    width: 24%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: 50%; */
+    box-shadow: 2px 2px 10px 2px #d0cfcfaf;
+}
+.item-allGame-list img{
+    width: 100%;
+    /* border-radius: 10px; */
+}
+.item-allGame-list .footer{
+    padding:0px 5px 5px 5px;
+}
+
+@media(max-width:950px){
+    .list-game-page{
+        height: 23vw;
+    }
+    .item-list-game-page{
+        width: 23%;
+        height: 100%;
+    }
+    .poster{
+        height: 100%;
+        width: 100%;
+    }
+    .poster1{
+        width: 100%;
+        height: 100%;
+    }
+    #topPicksForYou{
+        height: 48vw;
+    }
+    .eachColimn-item-list-game-page{
+        width: 23%;
+        height: 48vw;
+        gap: 10px;
+    }
+    #bigPoster{
+        width: 100%;
+        height: 100%;
+    }
+    #topPickSmallItem{
+        width: 100%;
+    }
+    .happening-list-game-page{
+
+    }
+    .item-happening-list-game-page{
+        width: 31vw;
+        height: 31vw;
+
+    }
+    
+    .item-mostPlayed-list{
+        width: 23%;
+        height: 46vw;
+    }
+    #body-marketplace-page{
+        padding: 5px;
+    }
+    .item-allGame-list{
+        width: 23%;
+    }
+}
+@media(max-width:600px){
+    .list-game-page{
+        height: 31vw;
+    }
+    .item-list-game-page{
+        width: 31%;
+        height: 100%;
+    }
+    
+    #topPicksForYou{
+        height: 63vw;
+    }
+    .eachColimn-item-list-game-page{
+        width: 31%;
+        height: 63vw;
+        gap: 10px;
+    }
+    #bigPoster{
+        width: 100%;
+        height: 100%;
+    }
+    #topPickSmallItem{
+        width: 100%;
+    }
+    
+    .item-happening-list-game-page{
+        width: 47vw;
+        height: 48vw;
+
+    }
+    .mostPlayed-list{
+        flex-wrap: wrap;
+        height: 60vw;
+        overflow: hidden;
+    }
+    .item-mostPlayed-list{
+        width: 31%;
+        height: 62vw;
+    }
+    #body-marketplace-page{
+        padding: 5px;
+    }
+    .item-allGame-list{
+        width: 31%;
+    }
+}
+@media(max-width:450px){
+    .list-game-page{
+        height: 98vw;
+    }
+    .item-list-game-page{
+        width: 98%;
+        height: 100%;
+    }
+    
+    #topPicksForYou{
+        height: 98vw;
+    }
+    .eachColimn-item-list-game-page{
+        width: 48%;
+        height: 96vw;
+        gap: 10px;
+    }
+    
+   
+    .happening-list-game-page{
+        /* height:98vw ; */
+    }
+    .item-happening-list-game-page{
+        width: 98vw;
+        height: 98vw;
+
+    }
+    .mostPlayed-list{
+        flex-wrap: wrap;
+        height: 196vw;
+        
+    }
+    .item-mostPlayed-list{
+        width: 48%;
+        height: 98vw;
+    }
+    #body-marketplace-page{
+        padding: 5px;
+    }
+    .item-allGame-list{
+        width: 46%;
+    }
+}

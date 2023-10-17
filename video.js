@@ -82,6 +82,18 @@ window.addEventListener('scroll', () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 let scrollBar = document.getElementById('scrollbararea');
 const curorPosition = document.getElementById('test');
 curorPosition.addEventListener('mouseenter',(event) =>{
