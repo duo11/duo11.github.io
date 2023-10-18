@@ -2057,7 +2057,7 @@ button.toggleButton:hover{
 
     }
     #search-lcmp-after{
-        width: 100%;
+        width: 96%;
         padding: 10px;
     }
     #search-lcmp-after input{
@@ -2501,9 +2501,7 @@ button.toggleButton:hover{
     #topPickSmallItem{
         width: 100%;
     }
-    .happening-list-game-page{
-
-    }
+    
     .item-happening-list-game-page{
         width: 31vw;
         height: 31vw;
@@ -2586,9 +2584,7 @@ button.toggleButton:hover{
     }
     
    
-    .happening-list-game-page{
-        /* height:98vw ; */
-    }
+    
     .item-happening-list-game-page{
         width: 98vw;
         height: 98vw;
