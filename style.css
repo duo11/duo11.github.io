@@ -34,7 +34,7 @@
 body::-webkit-scrollbar {
     display: block;
 }
-body,header,footer{
+*{
     font-family: 'roboto', sans-serif;    
     line-height: 20px;
 }
@@ -179,6 +179,7 @@ button {
     width: 310px;
     height: 440px;
     border-radius: 10px;
+    overflow: hidden !important;
 
 }
 .result-box h1{
@@ -542,7 +543,7 @@ button {
 }
 
 #title{
-    font-family: Arial;
+    /* font-family: Arial; */
     color: #5d5e5f;
     font-weight: 600;
     height: 30px;
@@ -1056,7 +1057,7 @@ button.toggleButton:hover{
         outline: none;
         font-size: large;
         resize: none;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
 
     }   
     #ma1{
@@ -1201,7 +1202,7 @@ button.toggleButton:hover{
         outline: none;
         font-size: large;
         resize: none;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
 
     }   
     #ma1{
@@ -2693,3 +2694,34 @@ button.toggleButton:hover{
         width: 46%;
     }
 }
+
+
+@media(max-width:500px){
+    #setting-area{
+        width: 270px;
+    }
+    #profile-area{
+        width: 240px;
+    }
+    #search-area{
+        width: 270px;
+    }
+    #noti-area{
+        width: 270px;
+    }
+    #chat-area{
+        width: 270px;
+    }
+    #create-area{
+        width: 270px;
+    }
+}
+@media(max-width:300px){
+    .left-nav{
+        gap: 5px;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+
+}    
