@@ -119,7 +119,34 @@ window.addEventListener('scroll', () => {
     lastScroll = scroll;    
 });
 
+const toggleButtons = document.querySelectorAll('.toggleButton');
+const caption = document.querySelectorAll('.caption');
+        // Add a click event listener to each button
+        toggleButtons.forEach(button => {
 
+            button.addEventListener('mousedown', function(event) {
+                
+                const toggleId = event.target.getAttribute('id');
+                const captionId = "caption" + toggleId;
+                const dotId = "dot" + toggleId;
+                let maxheight = document.getElementById(captionId).style.maxHeight;
+                caption.forEach(p => {
+                    if(maxheight == "none"){
+                        document.getElementById(captionId).style.maxHeight = "3em";
+                        document.getElementById(toggleId).innerText = "See more"
+                        document.getElementById(dotId).style.display ="block";
+
+                    }
+                    else{
+                        document.getElementById(captionId).style.maxHeight = "none";
+                        document.getElementById(toggleId).innerText = "Collapse"
+                        document.getElementById(dotId).style.display ="none";
+
+                    }
+                });
+                
+            });
+        });
 
 
 

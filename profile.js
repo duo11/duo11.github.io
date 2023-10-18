@@ -5,11 +5,15 @@ function hide(){
     document.getElementById('search-area').style.display = "none";
 }
 function show2(){
-    if(document.getElementById('setting-area').style.display == "none"){
-    document.getElementById('setting-area').style.display = "flex";
+    if(document.getElementById('setting-area').style.display == "flex"){
+    document.getElementById('setting-area').style.display = "none";
 }
     else{
-        document.getElementById('setting-area').style.display = "none";
+        document.getElementById('setting-area').style.display = "flex";
+        document.getElementById("noti-area").style.display = "none";
+        document.getElementById("create-area").style.display = "none";
+        document.getElementById("chat-area").style.display = "none";
+
     }
 }
 var body = document.body;
@@ -57,9 +61,44 @@ function expandNotiArea(){
     if(isExpanded == "block"){
         document.getElementById("noti-area").style.display = "none";
 
+
     }
     else{
         document.getElementById("noti-area").style.display = "block";
+        document.getElementById("create-area").style.display = "none";
+        document.getElementById('setting-area').style.display = "none";
+        document.getElementById("chat-area").style.display = "none";
+
+
+    }
+}
+function expandCreate(){
+    const isExpanded = document.getElementById("create-area").style.display;
+    if(isExpanded == "block"){
+        document.getElementById("create-area").style.display = "none";
+
+    }
+    else{
+        document.getElementById("create-area").style.display = "block";
+        document.getElementById("noti-area").style.display = "none";
+        document.getElementById('setting-area').style.display = "none";
+        document.getElementById("chat-area").style.display = "none";
+
+
+    }
+}
+function expandChat(){
+    const isExpanded = document.getElementById("chat-area").style.display;
+    if(isExpanded == "block"){
+        document.getElementById("chat-area").style.display = "none";
+
+    }
+    else{
+        document.getElementById("chat-area").style.display = "block";
+        document.getElementById("create-area").style.display = "none";
+        document.getElementById("noti-area").style.display = "none";
+        document.getElementById('setting-area').style.display = "none";
+
 
     }
 }

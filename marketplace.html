@@ -158,8 +158,8 @@
         </div>
         </div>
         <div class="right-nav" >
-            <div class="right-icon" tooltip-title="Menu" href="#" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
-            <div class="right-icon" tooltip-title="Messenger" href="#" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Menu" onclick="expandCreate()" tabindex="0" ><img src="image/grouptab.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Messenger" onclick="expandChat()" tabindex="0"  ><img src="image/mess.png"  alt="" ></div>
             <div class="right-icon" tooltip-title="Notifications" onclick="expandNotiArea()" tabindex="0" ><img src="image/notification.png" alt="" ></div>
             <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="image/avatar1.png" alt="" id="accountImg" > </div>
             
@@ -248,6 +248,172 @@
                     <p style="font-size: small;color: #96979A;">32 minutes ago</p>
                 </div>
             </div>
+        </div>
+
+        <div id="chat-area">
+            <div id="bigText-noti-area">
+                    <h1>Chats</h1>
+                    <img src="image/3dots.png" alt="" class="mediumIcon">
+            </div>
+            <input type="text" name="" id="input-chat" placeholder="Search Messenger">
+            <div id="arrangeButton-noti-area">
+                <div id="item-arrangeButton-noti-area"><p style="color: #9400FF;">All</p></div>
+                <div id="item-arrangeButton-noti-area"><p>Unread</p></div>
+            </div>
+            
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request2.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Son tung mtp</p>
+                    <p style="font-size: small;color: #96979A;">Hello <3</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/request1.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Jack-97</p>
+                    <p style="font-size: small;color: #96979A;"> Như mọi hôm nhé</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/avatarDo.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Độ Mixi</p>
+                    <p style="font-size: small;color: #96979A;">Tối stream không em</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/avatarBo.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Tui tên Bô</p>
+                    <p style="font-size: small;color: #96979A;">A Độ rủ bắn cs2</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/avatarHanu.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Đại học Hà Nội</p>
+                    <p style="font-size: small;color: #96979A;">Em trượt rồi :((</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/avatarviewsonic.jpg" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>ViewSonic</p>
+                    <p style="font-size: small;color: #96979A;">You: Cho e hỏi màn LG g63 a ơi</p>
+                </div>
+            </div>
+            <div id="item-chat-area">
+                <div id="avatar-noti-area">
+                    <img src="image/avatarReviewphim.png" alt="" class="avatarNoti">
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>Review phim</p>
+                    <p style="font-size: small;color: #96979A;">You: Phim không hay</p>
+                </div>
+            </div>
+        </div>
+        <div id="create-area">
+            <div id="bigText-noti-area">
+                    <h1>Create</h1>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/writePost.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Post</b></p>
+                    <p class="smallText">Share a post on News Feed</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/story.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Story</b></p>
+                    <p class="smallText">Share a photo or write something</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/reels.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Reel</b></p>
+                    <p class="smallText">Share a reel.</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/star.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Life Event</b></p>
+                    <p class="smallText">Add a life to your profile.</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/flag.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Page</b></p>
+                    <p class="smallText">Connect and share with customers or fans. </p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/megaphone.png" alt="" class="mediumIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Ad</b></p>
+                    <p class="smallText">Advertise your business, brand or organisation.</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/group.png" alt="" class="largeIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Group</b></p>
+                    <p class="smallText">Connect with people who share your interests.</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/event.png" alt="" class="largeIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Event</b></p>
+                    <p class="smallText">Bring people together with a public or private.</p>
+                </div>
+            </div>
+            <div class="item-create-area">
+                <div class="img-item-create-area">
+                    <img src="image/shopping-bags.png" alt="" class="largeIcon">
+                </div>
+                <div class="text-item-create-area">
+                    <p><b>Marketplace Listing</b></p>
+                    <p class="smallText">Sell items to people in your community.</p>
+                </div>
+            </div>
+            
+            
         </div>
         <div id="setting-area" >
             <div id="profile-area">
