@@ -2008,7 +2008,6 @@ button.toggleButton:hover{
 .marketItemImg{
     width: 100%;
     
-    height: fit-content;
 
 }
 @media only screen and (max-width:1450px){
