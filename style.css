@@ -357,8 +357,8 @@ button {
     flex-wrap: wrap;
     gap: 6px;
     position:fixed;
-    right: 2%;
-    margin-top: 59px;
+    right: 1%;
+    margin-top: 55px;
     width: 360px;
     height: 450px;
     border-radius: 10px ;
@@ -2141,6 +2141,10 @@ button.toggleButton:hover{
     padding: 10px;
     gap: 10px;
 }
+#item-noti-area:hover{
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
 #avatar-noti-area{
     position: relative;
     display: flex;
@@ -2215,18 +2219,27 @@ button.toggleButton:hover{
     gap: 10px;
 }
 
-
+#item-chat-area:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
 .item-create-area{
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 13px  ;
-    margin-left: 10px;
+    margin-left: 5px;
+    padding: 5px;
     width: 95%;
+    border-radius: 10px;
 
 }
+.item-create-area:hover{
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
 .img-item-create-area{
-    background-color: #E4E6E9;
+    background-color: #D8DADF;
     width:40px ;
     height: 40px;
     border-radius: 100%;
