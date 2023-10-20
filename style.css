@@ -37,9 +37,7 @@ body::-webkit-scrollbar {
 *{
     font-family: 'roboto', sans-serif;    
     line-height: 20px;
-}
-#left-side-column,#right-side-column{
-    font-family: 'roboto',sans-serif;
+
 }
 body {
     background-color: #F0F2F5;
@@ -507,9 +505,7 @@ button {
     /* background-color: #6d4040; */
     width: 100%;
 }
-.list p{
-    font-weight: 500;
-}
+
 #side-icon1{
     height:35px;
     width: 35px;
@@ -1858,7 +1854,7 @@ button.toggleButton:hover{
     overflow-x: auto;
 }
 .item-list-lcvp{
-    width: 98%;
+    width: 95%;
     height: 50px;
     padding: 0 5px;
     display: flex;
@@ -2417,6 +2413,9 @@ button.toggleButton:hover{
     overflow: hidden;
     position: relative;
 }
+.item-list-game-page:hover{
+    cursor: pointer;
+}
 .poster{
     width: 16vw;
     height: 16vw;
@@ -2474,6 +2473,7 @@ button.toggleButton:hover{
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .item-happening-list-game-page .head{
@@ -2508,6 +2508,7 @@ button.toggleButton:hover{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 .item-mostPlayed-list img{
     filter: brightness(80%);
@@ -2523,6 +2524,7 @@ button.toggleButton:hover{
 
 #video-game-page{
     position: relative;
+    cursor: pointer;
 }
 #text-video-game-page{
     display: flex;
@@ -2542,6 +2544,7 @@ button.toggleButton:hover{
 }
 
 .item-allGame-list{
+    cursor: pointer;
     width: 24%;
     height: fit-content;
     background-color: white;
@@ -2725,3 +2728,11 @@ button.toggleButton:hover{
     }
 
 }    
+
+
+#test{
+    overflow-y: auto ;
+    height: 89%;
+    width: 100%;
+    display: flex;
+}

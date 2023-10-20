@@ -134,7 +134,7 @@ window.addEventListener('scroll', () => {
 
 
 let scrollBar = document.getElementById('scrollbararea');
-const curorPosition = document.getElementById('test');
+const curorPosition = document.getElementById('main-test');
 curorPosition.addEventListener('mouseenter',(event) =>{
     scrollBar.style.display = "none";
 });
